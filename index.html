@@ -1,0 +1,1281 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>百年前，人们画出的未来 · 跨国家未来想象图册</title>
+<style>
+:root{--bg:#141413;--panel:#1c1c1a;--line:#34332d;--ink:#f5f4ed;--muted:#a8a69c;--coral:#d97757;--sand:#a08a5b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{max-width:1440px;margin:0 auto;padding:0 28px}
+header.hero{padding:86px 0 52px;border-bottom:1px solid var(--line);background:radial-gradient(1000px 460px at 78% -12%,rgba(217,119,87,.17),transparent 70%)}
+.kicker{font-size:12px;letter-spacing:.3em;color:var(--coral);text-transform:uppercase;margin-bottom:22px}
+h1{font-family:"Noto Serif SC","Songti SC",Georgia,serif;font-size:clamp(38px,6vw,72px);line-height:1.12;margin:0 0 20px;letter-spacing:-.02em}h1 em{font-style:normal;color:var(--coral)}
+.sub{font-size:clamp(15px,1.5vw,18px);color:var(--muted);max-width:820px;margin:0 0 26px}
+.facts{display:flex;flex-wrap:wrap;gap:11px}.fact{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:11px 17px;font-size:13px;color:var(--muted)}
+.fact b{color:var(--ink);font-family:Georgia,serif;font-size:19px;margin-right:8px}
+.nations{margin-top:20px;font-size:13px;color:var(--muted);line-height:2}.nations b{color:var(--sand);font-weight:500}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:44px;align-items:start}
+nav.toc{position:sticky;top:0;max-height:100vh;overflow:auto;padding:30px 0 60px}
+nav.toc .lbl{font-size:11px;letter-spacing:.24em;color:var(--muted);margin-bottom:14px}
+nav.toc a{display:flex;gap:11px;padding:7px 10px;border-radius:8px;text-decoration:none;font-size:12.5px;color:var(--muted);line-height:1.45;transition:.18s}
+nav.toc a b{font-family:Georgia,serif;color:var(--coral);font-weight:400;flex:0 0 20px}nav.toc a:hover{background:var(--panel);color:var(--ink)}
+main{padding:32px 0 100px;min-width:0}
+.intro{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--coral);border-radius:0 14px 14px 0;padding:24px 28px;margin-bottom:24px}
+.intro h2{font-family:"Noto Serif SC",serif;font-size:20px;margin:0 0 12px}.intro p{color:var(--muted);font-size:14px;margin:0 0 11px;line-height:1.9}.intro p:last-child{margin-bottom:0}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 38px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(20,20,19,.95);backdrop-filter:blur(10px);z-index:20}
+.toolbar .lbl{font-size:11px;letter-spacing:.16em;color:var(--muted);margin-right:4px}
+.fbtn{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 13px;font-size:12.5px;cursor:pointer;font-family:inherit;transition:.18s}
+.fbtn sup{color:var(--sand);font-size:10px;margin-left:3px}.fbtn:hover{border-color:var(--coral);color:var(--ink)}.fbtn.on{background:var(--coral);border-color:var(--coral);color:#141413;font-weight:600}.fbtn.on sup{color:#141413}
+.chapter{margin-bottom:86px;scroll-margin-top:74px}
+.chapter-head{display:flex;gap:20px;align-items:flex-start;margin-bottom:12px}
+.chnum{font-family:Georgia,serif;font-size:52px;line-height:1;color:var(--coral);opacity:.85;flex:0 0 auto}
+.chapter h2{font-family:"Noto Serif SC","Songti SC",serif;font-size:clamp(23px,2.7vw,33px);margin:0 0 12px}
+.lead{color:var(--muted);font-size:14.5px;max-width:940px;margin:0;line-height:1.9}
+.count{font-size:11px;color:var(--sand);letter-spacing:.14em;margin:15px 0 20px 72px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px}
+.card{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:.22s}
+.card:hover{transform:translateY(-3px);border-color:#4a483f;box-shadow:0 14px 36px rgba(0,0,0,.35)}.card.hide{display:none}
+.imgbtn{position:relative;display:block;width:100%;padding:0;border:0;background:#e9e6dc;cursor:zoom-in;overflow:hidden}
+.imgbtn img{display:block;width:100%;height:248px;object-fit:contain}
+.zoom{position:absolute;right:10px;bottom:10px;background:rgba(20,20,19,.82);color:var(--ink);font-size:11px;padding:4px 10px;border-radius:999px;opacity:0;transition:.2s}.card:hover .zoom{opacity:1}
+figcaption{padding:17px 19px 19px;display:flex;flex-direction:column;flex:1}
+.cardmeta{display:flex;align-items:center;gap:9px;margin-bottom:9px;flex-wrap:wrap}
+.flag{font-size:11px;background:rgba(217,119,87,.14);color:var(--coral);border:1px solid rgba(217,119,87,.3);padding:2px 10px;border-radius:999px}
+.year{font-size:11px;color:var(--muted);font-family:Georgia,"Noto Serif SC",serif}
+figcaption h3{font-family:"Noto Serif SC","Songti SC",serif;font-size:16.5px;margin:0 0 9px;line-height:1.4}
+figcaption p{font-size:12.8px;color:var(--muted);margin:0 0 13px;line-height:1.85;flex:1}
+.src{font-size:11px;color:var(--sand);text-decoration:none;align-self:flex-start;border-bottom:1px dotted currentColor;padding-bottom:2px}.src:hover{color:var(--coral)}
+footer{border-top:1px solid var(--line);padding:42px 0 80px;color:var(--muted);font-size:13px}
+footer h2{font-family:"Noto Serif SC",serif;color:var(--ink);font-size:20px;margin:0 0 15px}
+footer p{max-width:940px;margin:0 0 12px;line-height:1.9}footer a{color:var(--sand)}
+#lb{position:fixed;inset:0;background:rgba(8,8,7,.96);z-index:100;display:none;align-items:center;justify-content:center;flex-direction:column;padding:22px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:94vw;max-height:84vh;object-fit:contain;box-shadow:0 20px 80px rgba(0,0,0,.7)}
+#lb .cap{color:var(--ink);font-size:14px;margin-top:15px;text-align:center}#lb .hint{color:var(--muted);font-size:11px;margin-top:6px}
+@media(max-width:980px){.layout{grid-template-columns:1fr}nav.toc{display:none}.grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.count{margin-left:0}.wrap{padding:0 18px}header.hero{padding:52px 0 36px}}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1928</div>
+<h1>百年前，人们<em>画</em>出的未来</h1>
+<p class="sub">一次跨国家、跨生活领域的视觉考古：从 1804 年英国的球形飞行器，到 1900 年前后法国、德国的成套香烟卡片，1914 年俄国糖果盒里的明信片，再到美国小镇的搞笑明信片、日本明治的未来记与晚清上海的科学小说。看他们怎样把「以后的人怎么过日子」一件件画出来。</p>
+<div class="facts">
+<div class="fact"><b>11</b>个国家 / 地区</div><div class="fact"><b>16</b>个生活领域</div>
+<div class="fact"><b>102</b>幅带图注的原图</div><div class="fact"><b>1804–1928</b>年代跨度</div><div class="fact"><b>PD</b>公有领域</div>
+</div>
+<div class="nations"><b>收录来源：</b>法国 · 德国 · 英国 · 意大利 · 俄国 · 美国 · 奥地利 · 波兰 · 澳大利亚 · 日本 · 中国 ·（另有少量未署国别馆藏）</div>
+</div></header>
+<div class="wrap layout">
+<nav class="toc"><div class="lbl">目录 / CONTENTS</div><a href="#ch01"><b>01</b>出门：给每个职业发一对翅膀</a><a href="#ch02"><b>02</b>城市与建筑：往上叠，而不是推倒重来</a><a href="#ch03"><b>03</b>地面交通：懒得走路，也懒得换乘</a><a href="#ch04"><b>04</b>海洋：被当成第二个陆地</a><a href="#ch05"><b>05</b>家务、穿衣与照护：机器接管身体周边</a><a href="#ch06"><b>06</b>吃饭、种地与取暖：实验室接管厨房和天空</a><a href="#ch07"><b>07</b>课堂与办公：知识像水一样灌进去</a><a href="#ch08"><b>08</b>通信与媒体：可视电话、影像信件、听报纸</a><a href="#ch09"><b>09</b>看病与身体：远程医疗比互联网早一百年</a><a href="#ch10"><b>10</b>娱乐、体育与休闲：技术只换场地，不换玩法</a><a href="#ch11"><b>11</b>战争、秩序与风险：进步也会出事</a><a href="#ch12"><b>12</b>地方想象：我们这儿的未来长什么样</a><a href="#ch13"><b>13</b>东亚的另一条路：未来是政治，不是机器</a><a href="#ch14"><b>14</b>更早的十九世纪：1804—1864</a><a href="#ch15"><b>15</b>星空：一个几乎缺席的角落</a><a href="#ch16"><b>16</b>他们没想到的：衣服、螺旋桨与信息</a></nav>
+<main>
+<div class="intro">
+<h2>这批图从哪来</h2>
+<p>最核心的一套是法国 <b>En L'An 2000（公元 2000 年）</b>：1899、1900、1901 与 1910 年由 Jean-Marc Côté 等画师分批绘制，原本是为 1900 年巴黎世博会做的纸卡，塞进香烟盒，后来改成明信片。委托人去世后卡片在工厂地下室躺了二十多年，又在一间古董店躺了五十年，直到 1986 年阿西莫夫把它们收进《Futuredays》才重见天日，已知至少 78–87 张。</p>
+<p>同一波风潮里，德国出了「21 世纪的德国」卡片，俄国 1914 年由 Einem 糖果厂（后来的「红色十月」）出了「23 世纪的莫斯科」明信片，美国、奥地利、波兰、澳大利亚则流行「本城的未来」实寄明信片。它们都是<b>量产的日常印刷品</b>，所以特别能代表普通人而非个别天才的共同想象。此外还收了罗比达的小说插图、Wellcome 收藏的医学想象、意大利未来主义建筑、日本国立国会图书馆藏明治「未来记」与《点石斋画报》书影。</p>
+<p><b>怎么读：</b>每张图都注明了国家、年代、画面说明和原始馆藏页链接，可按国家筛选、点击放大。刻意把不同媒介（香烟卡、明信片、小说插图、杂志封面、建筑图纸、书影）混排在同一章，避免把一整套同风格卡片当成「那个时代的全部想法」。</p>
+</div>
+<div class="toolbar"><span class="lbl">按国家筛选</span><button class="fbtn on" data-f="ALL">全部</button><button class="fbtn" data-f="FR">法国 <sup>57</sup></button><button class="fbtn" data-f="DE">德国 <sup>13</sup></button><button class="fbtn" data-f="GB">英国 <sup>10</sup></button><button class="fbtn" data-f="US">美国 <sup>10</sup></button><button class="fbtn" data-f="JP">日本 <sup>4</sup></button><button class="fbtn" data-f="IT">意大利 <sup>2</sup></button><button class="fbtn" data-f="XX">不详 <sup>1</sup></button><button class="fbtn" data-f="AT">奥地利 <sup>1</sup></button><button class="fbtn" data-f="CN">中国 <sup>1</sup></button><button class="fbtn" data-f="AU">澳大利亚 <sup>1</sup></button><button class="fbtn" data-f="RU">俄国 <sup>1</sup></button><button class="fbtn" data-f="PL">波兰 <sup>1</sup></button></div>
+<section class="chapter" id="ch01">
+  <div class="chapter-head"><span class="chnum">01</span><div><h2>出门：给每个职业发一对翅膀</h2><p class="lead">最一致的想象是「未来的人会飞」，但飞法因国而异：法国给邮差、警察、消防员各发翅膀，德国画成有设备的运输系统，英国早在 1843 年就把蒸汽机送上天，美国把飞行和汽车、女性驾驶绑在一起，俄国则给雪橇装螺旋桨。共同点是——飞行被想成现有交通工具升空，而不是一种全新的物理。</p></div></div>
+  <div class="count">8 幅 · 5 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_cab.jpg" data-cap="空中出租车站" aria-label="放大：空中出租车站">
+    <img loading="lazy" src="images/fr_air_cab.jpg" alt="空中出租车站"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>空中出租车站</h3>
+    <p>一座悬在半空的木质平台就是「车站」，边缘停着带折叠翼的小飞行器，乘客沿梯子上下。所有人都还穿着 19 世纪的长裙与礼帽——技术变了，衣着和礼仪一点没变。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_cab.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_postman.jpg" data-cap="乡村邮差" aria-label="放大：乡村邮差">
+    <img loading="lazy" src="images/fr_air_postman.jpg" alt="乡村邮差"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1910 · En L&#x27;An 2000 系列</span></div>
+    <h3>乡村邮差</h3>
+    <p>背邮包的邮差坐在一架单人机上，举着一封信正要投递，背景是开阔田野。把「最后一公里」想成个人飞行，是这套卡片里最接近今天无人机配送的一张。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_postman.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_firefighters.jpg" data-cap="飞行消防员" aria-label="放大：飞行消防员">
+    <img loading="lazy" src="images/fr_air_firefighters.jpg" alt="飞行消防员"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>飞行消防员</h3>
+    <p>屋顶浓烟滚滚，一群红衣消防员背着自己扇动的翅膀从空中俯冲，有人在半空接住被救者。消防、救援、警务都被想成「长翅膀的人」，而不是机器。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_firefighters.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_1843_ariel.jpg" data-cap="「Ariel」空中蒸汽马车" aria-label="放大：「Ariel」空中蒸汽马车">
+    <img loading="lazy" src="images/gb_1843_ariel.jpg" alt="「Ariel」空中蒸汽马车"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1843 · William Henson</span></div>
+    <h3>「Ariel」空中蒸汽马车</h3>
+    <p>细长得像蜻蜓：巨大固定翼、尾部螺旋桨、下面吊着船形客舱，飞过云层与城镇。为「空中运输公司」画的招股宣传画，比莱特兄弟早 60 年。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AAriel%2C_the_first_carriage_of_the_Aerial_Transit_Company%2C_LoC.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_flugmashines.jpg" data-cap="飞行机器" aria-label="放大：飞行机器">
+    <img loading="lazy" src="images/de_flugmashines.jpg" alt="飞行机器"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>飞行机器</h3>
+    <p>两人坐在一架张着巨幅伞翼的机器上，下方有人被起飞的气流掀翻。德国这套更爱画设备与秩序，少一点法国卡片里的嬉戏。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AGermany_in_XXI_century._Flugmashines.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_dart_cabrio.jpg" data-cap="空中敞篷车" aria-label="放大：空中敞篷车">
+    <img loading="lazy" src="images/us_dart_cabrio.jpg" alt="空中敞篷车"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1900–1910 · Harry Grant Dart</span></div>
+    <h3>空中敞篷车</h3>
+    <p>女士握着方向盘驾驶红色敞篷飞行器穿过云海，男伴坐在旁边；原作为《All-Story》杂志封面。美国版本把飞行、汽车与女性驾驶捆在一起，个人主义色彩最浓。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ADart_aerostatic_cabrio_13554u.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="RU">
+  <button class="imgbtn" data-src="images/ru_spb_shosse_1914.jpg" data-cap="2259 年的彼得堡大道" aria-label="放大：2259 年的彼得堡大道">
+    <img loading="lazy" src="images/ru_spb_shosse_1914.jpg" alt="2259 年的彼得堡大道"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">俄国</span><span class="year">1914 · Einem 糖果厂「未来莫斯科」</span></div>
+    <h3>2259 年的彼得堡大道</h3>
+    <p>雪原上带螺旋桨的「空中雪橇」在冰面滑行，远处是金色洋葱顶和散步的人群。卡片背面写：大道被改造成水晶般的冰镜，卖热饮的小贩穿着「空中鞋」穿梭。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AMoscow_in_XXIII_Century._SPb_Shosse._1914.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_helicopter.jpg" data-cap="夜航直升机" aria-label="放大：夜航直升机">
+    <img loading="lazy" src="images/fr_helicopter.jpg" alt="夜航直升机"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>夜航直升机</h3>
+    <p>单机身、顶部大螺旋桨、前方探照灯打出黄色光柱。整套卡片里最接近真正航空工程的一张，但驾驶者仍端坐在敞篷马车里。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Helicopter.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch02">
+  <div class="chapter-head"><span class="chnum">02</span><div><h2>城市与建筑：往上叠，而不是推倒重来</h2><p class="lead">城市几乎从不被重建，只在原有街道上不断叠加：巴黎圣母院顶上建航空站、意大利人画三层马路、美国人画摩天楼峡谷，还有整栋房子装上轮子去旅行、每栋楼配一个屋顶机库。唯一真想拆掉旧城的是意大利未来主义者，而他们恰恰不画人。</p></div></div>
+  <div class="count">9 幅 · 5 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_nd_paris.jpg" data-cap="巴黎圣母院航空站" aria-label="放大：巴黎圣母院航空站">
+    <img loading="lazy" src="images/fr_robida_nd_paris.jpg" alt="巴黎圣母院航空站"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1883 · Robida《二十世纪》彩色版</span></div>
+    <h3>巴黎圣母院航空站</h3>
+    <p>哥特式塔顶被架起一座巨大的钢铁停机平台，飞艇停靠，塔身下方仍是熟悉的巴黎。罗比达的高明处在于：新机器永远长在旧建筑上，而不是另起一座城。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Albert_Robida_-_ND_de_Paris_%28version_en_couleurs%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="IT">
+  <button class="imgbtn" data-src="images/it_santelia_stazione.png" data-cap="飞机与火车总站（新城）" aria-label="放大：飞机与火车总站（新城）">
+    <img loading="lazy" src="images/it_santelia_stazione.png" alt="飞机与火车总站（新城）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">意大利</span><span class="year">1914 · Antonio Sant&#x27;Elia</span></div>
+    <h3>飞机与火车总站（新城）</h3>
+    <p>阶梯式塔楼、外挂电梯、三层叠起的道路与跑道，铅笔线把城市画成一台巨大的机器。意大利未来主义者不画生活，只画城市逻辑；这批图纸后来喂养了《大都会》与《银翼杀手》。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AStazione_d%27aeroplani_e_treni_%28La_Citt%C3%A0_Nuova%29_1914_ART_Antonio_Sant%27Elia_2023_RET_WjArendshorst.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="IT">
+  <button class="imgbtn" data-src="images/it_santelia_casa.png" data-cap="阶梯式住宅（新城）" aria-label="放大：阶梯式住宅（新城）">
+    <img loading="lazy" src="images/it_santelia_casa.png" alt="阶梯式住宅（新城）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">意大利</span><span class="year">1914 · Antonio Sant&#x27;Elia</span></div>
+    <h3>阶梯式住宅（新城）</h3>
+    <p>橙褐色高层住宅像一组竖起来的水坝，垂直交通暴露在立面外。预言的不是某个 gadget，而是密度、速度与垂直分层。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ACasa_a_gradinata_%28La_Citt%C3%A0_Nuova%29_1914_ART_Antonio_Sant%27Elia_2023_RET_WjArendshorst.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_nyc_1911.png" data-cap="1911 年想象的未来纽约" aria-label="放大：1911 年想象的未来纽约">
+    <img loading="lazy" src="images/us_nyc_1911.png" alt="1911 年想象的未来纽约"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1911 · King&#x27;s Views of New York</span></div>
+    <h3>1911 年想象的未来纽约</h3>
+    <p>彩色封面：密集摩天楼像峡谷一样把街道夹在中间，天空有飞行器掠过。美国人对未来的核心想象是「高度」，与欧洲人执着于「翅膀」形成对照。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:King%27sViewsNewYorkCoverDelineatorRichardRummellEd_Moses_King1911.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_st_louis_2010.jpg" data-cap="1910 年预言 2010 年的圣路易斯" aria-label="放大：1910 年预言 2010 年的圣路易斯">
+    <img loading="lazy" src="images/us_st_louis_2010.jpg" alt="1910 年预言 2010 年的圣路易斯"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1910 · Greater St. Louis Christmas Magazine</span></div>
+    <h3>1910 年预言 2010 年的圣路易斯</h3>
+    <p>细密黑白线描：橄榄街两侧全是高楼，高架轨道层层叠叠。标题写着 A Forecast——一百年的跨度、具体到某条街，是当时少见的严肃城市预测。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AA_Forecast_-_Looking_Up_Olive_Street%2C_St._Louis%2C_Missouri%2C_in_the_Year_2010._From_Greater_St._Louis_Christmas_Magazine%2C_Dec._1910.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="XX">
+  <button class="imgbtn" data-src="images/xx_aerial_house.jpg" data-cap="空中住宅" aria-label="放大：空中住宅">
+    <img loading="lazy" src="images/xx_aerial_house.jpg" alt="空中住宅"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">不详</span><span class="year">19 世纪末 · 来源馆藏未署国别</span></div>
+    <h3>空中住宅</h3>
+    <p>一整栋房子架在巨大的螺旋桨与气囊结构上悬在空中，像把别墅装进飞艇。住宅被想成可移动的私人堡垒，而不是城市里的一个单元。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Aerial_house.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_airplane_garage.jpg" data-cap="每栋楼都该有机库" aria-label="放大：每栋楼都该有机库">
+    <img loading="lazy" src="images/us_airplane_garage.jpg" alt="每栋楼都该有机库"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">20 世纪初 · 杂志插图</span></div>
+    <h3>每栋楼都该有机库</h3>
+    <p>一架橙色飞机停在楼顶平台上，配文大意是「到那个年代，没有哪栋楼会没有自家的飞机库」。私人飞行被推到极致：连停车空间都要搬上天台。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AThe_roof_of_an_airplane_garage_for_a_city.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_rolling_house.jpg" data-cap="会走路的房子" aria-label="放大：会走路的房子">
+    <img loading="lazy" src="images/fr_rolling_house.jpg" alt="会走路的房子"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>会走路的房子</h3>
+    <p>一栋红砖小别墅装在轮子上沿乡间公路慢慢开，烟囱还冒烟，窗里有人探头。这不就是房车——但画师想的是整栋房子一起搬家。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Rolling_house.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_stadt.jpg" data-cap="未来城市剖面" aria-label="放大：未来城市剖面">
+    <img loading="lazy" src="images/de_stadt.jpg" alt="未来城市剖面"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>未来城市剖面</h3>
+    <p>一栋横向铺开的巨型多层建筑像剖开的蜂巢，层层都是轨道与站台。德国卡片把城市理解为一套可拆解、可叠加的工程系统。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._Stadt.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch03">
+  <div class="chapter-head"><span class="chnum">03</span><div><h2>地面交通：懒得走路，也懒得换乘</h2><p class="lead">自动人行道让人站着不动就穿城；铁路船、水上列车、飞机与火车的合体车站，都是想消灭「换乘」这件麻烦事；轮滑鞋解决最后几百米；还有一条直接通往北京的电气铁路。19 世纪末的人把效率问题理解成 purely 机械问题。</p></div></div>
+  <div class="count">6 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_trottoire.jpg" data-cap="自动人行道" aria-label="放大：自动人行道">
+    <img loading="lazy" src="images/de_trottoire.jpg" alt="自动人行道"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>自动人行道</h3>
+    <p>一群衣着华丽的人站在带斜纹的移动平台上被直接送走，人不用迈步。19 世纪末「传送带式街道」是跨国母题，1893 年芝加哥世博会真造过一段。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._Trottoire.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_railway_boat.jpg" data-cap="铁路船" aria-label="放大：铁路船">
+    <img loading="lazy" src="images/de_railway_boat.jpg" alt="铁路船"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>铁路船</h3>
+    <p>船身像一列火车车厢、拖着烟囱在浪里航行，远处还有同型船。当时普遍认为「换乘」是现代生活最大的浪费，于是干脆让交通工具合体。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._Railway_boat.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_electric_train.jpg" data-cap="巴黎—北京电气列车" aria-label="放大：巴黎—北京电气列车">
+    <img loading="lazy" src="images/fr_electric_train.jpg" alt="巴黎—北京电气列车"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899–1910 · En L&#x27;An 2000 系列</span></div>
+    <h3>巴黎—北京电气列车</h3>
+    <p>工人在铁轨边架设电气施工设备，背景是红砖站房。整套卡片里唯一的洲际想象，终点直接写成了北京——可见 19 世纪末欧洲人心里「远方」的坐标。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Electric_train.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_auto_rollers.jpg" data-cap="自动轮滑鞋" aria-label="放大：自动轮滑鞋">
+    <img loading="lazy" src="images/fr_auto_rollers.jpg" alt="自动轮滑鞋"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>自动轮滑鞋</h3>
+    <p>两个红衣人穿着带轮子的鞋在路面上飞滑，空中还有飞行器掠过。连短途出行都要交给机械，而且照样是两个人并排「散步」的社交场面。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Auto_rollers.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_house.jpg" data-cap="未来集合住宅" aria-label="放大：未来集合住宅">
+    <img loading="lazy" src="images/de_house.jpg" alt="未来集合住宅"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>未来集合住宅</h3>
+    <p>一排整齐的多层公寓楼，行人从门前走过，建筑底部架在平台上。德国这套把「未来」主要理解成住房与市政的标准化，而非奇技淫巧。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._House.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_bus.jpg" data-cap="巴黎空中巴士" aria-label="放大：巴黎空中巴士">
+    <img loading="lazy" src="images/fr_air_bus.jpg" alt="巴黎空中巴士"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>巴黎空中巴士</h3>
+    <p>带顶棚和螺旋桨的浮空平台停在屋顶高度，像把公共马车整体抬到空中，乘客排队上下。它想的是公共交通，不是私人飞车。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_bus.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch04">
+  <div class="chapter-head"><span class="chnum">04</span><div><h2>海洋：被当成第二个陆地</h2><p class="lead">今天看来最莫名的一整类。鲸鱼拉公交、海底打槌球、骑海马比赛、钓海鸥、海怪袭击——人们不穿潜水服、不湿头发，海底就是铺了草地的公园。19 世纪末「征服自然」的最后一块空白是海洋，这个执念后来几乎完全消失。</p></div></div>
+  <div class="count">8 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_whale_bus.jpg" data-cap="鲸鱼巴士" aria-label="放大：鲸鱼巴士">
+    <img loading="lazy" src="images/fr_whale_bus.jpg" alt="鲸鱼巴士"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>鲸鱼巴士</h3>
+    <p>整套卡片最有名的一张：蓝紫色鲸鱼被套上缰绳，背上驮着红色观光车厢在海上航行，乘客站在甲板上。19 世纪末「驯服自然」的观念把海洋生物直接当成了公共交通。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Whale_bus.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_water_croquet.jpg" data-cap="水下槌球" aria-label="放大：水下槌球">
+    <img loading="lazy" src="images/fr_water_croquet.jpg" alt="水下槌球"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>水下槌球</h3>
+    <p>几位穿长裙戴帽的女士在海底草地上弯腰打槌球，旁边游过鱼群。她们没有潜水装备、头发也没湿——海底被完全当成另一个陆地。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Water_croquet.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_sea_monster.jpg" data-cap="深海巨兽" aria-label="放大：深海巨兽">
+    <img loading="lazy" src="images/fr_sea_monster.jpg" alt="深海巨兽"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>深海巨兽</h3>
+    <p>蓝绿海水里，巨大的章鱼状海怪缠住红衣潜水者，画面紧张。整套卡片里少见的「未来也有危险」，而且危险来自自然，不是技术。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Sea_monster.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_divers.jpg" data-cap="海底猎人" aria-label="放大：海底猎人">
+    <img loading="lazy" src="images/fr_divers.jpg" alt="海底猎人"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>海底猎人</h3>
+    <p>穿潜水服的人骑着海马、与大章鱼和鱼群缠斗，姿态像在陆地上打猎。海洋在他们的未来里既是牧场、猎场，也是游乐场。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Divers.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_in_water.jpg" data-cap="水上观光船" aria-label="放大：水上观光船">
+    <img loading="lazy" src="images/de_in_water.jpg" alt="水上观光船"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>水上观光船</h3>
+    <p>一艘载满游客的敞篷船航行在海上，远处成排帆船与飞艇，水下还有巨大海兽。德国把海洋画成一条可运营的观光线路。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AGermany_in_XXI_century._In_water.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_race_in_pacific.jpg" data-cap="太平洋赛马" aria-label="放大：太平洋赛马">
+    <img loading="lazy" src="images/fr_race_in_pacific.jpg" alt="太平洋赛马"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>太平洋赛马</h3>
+    <p>骑着海马与海豚的骑手在浪尖冲刺，岸边插着红旗。把赛马场搬到海上——技术只换场地，不换玩法。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Race_in_Pacific.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_fishing.jpg" data-cap="钓海鸥与骑鱼" aria-label="放大：钓海鸥与骑鱼">
+    <img loading="lazy" src="images/fr_fishing.jpg" alt="钓海鸥与骑鱼"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>钓海鸥与骑鱼</h3>
+    <p>海面上有人举长竿从空中钓海鸥，另一些人骑在大鱼背上，红色小人配蓝色浪头。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Fishing.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_cards_sheet_3.jpg" data-cap="《公元 2000 年》整版样张（其三）" aria-label="放大：《公元 2000 年》整版样张（其三）">
+    <img loading="lazy" src="images/fr_cards_sheet_3.jpg" alt="《公元 2000 年》整版样张（其三）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899–1910 · 法国国家图书馆藏</span></div>
+    <h3>《公元 2000 年》整版样张（其三）</h3>
+    <p>海洋主题整版：深渊巨兽、海底邮轮、采珠人、水下槌球、海马骑手。整组卡片里海洋题材占比高得离谱，反映 19 世纪末对征服海洋的执念。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AEn_l%27an_2000_-_Un_monstre_de_l%27ab%C3%AEme_-_Au_bord_d%27un_paquebot_sous-marin_-_Chercheurs_de_perles_-_Une_partie_de_croquet_-_Une_capture_difficile_-_Un_hydroplane_-_Voyez_terrasse_%21_-_Un_attelage_%C3%A9trange_-_Un..._-_btv1b525123315_%281_of_2%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch05">
+  <div class="chapter-head"><span class="chnum">05</span><div><h2>家务、穿衣与照护：机器接管身体周边</h2><p class="lead">工业革命最真实的焦虑藏在这里：一排机械臂同时给女士梳头、刷盘机自己擦地板、裁缝机整件吐出成衣、连门房都被换成机器。但有个细节暴露了时代边界——全自动梳妆机的动力仍来自一只脚踏泵。执行者换了，控制方式没换。</p></div></div>
+  <div class="count">6 幅 · 1 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_barber.jpg" data-cap="新式理发店" aria-label="放大：新式理发店">
+    <img loading="lazy" src="images/fr_barber.jpg" alt="新式理发店"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>新式理发店</h3>
+    <p>女士坐在中央，四周一整排机械臂同时替她剪发、烫发、刷衣、扑粉，理发师只在旁边看着。工业革命「机器会不会抢走人的活」的焦虑，被画成一幅热闹喜剧。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Barber.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_electric_scrubbing.jpg" data-cap="电动擦地机" aria-label="放大：电动擦地机">
+    <img loading="lazy" src="images/fr_electric_scrubbing.jpg" alt="电动擦地机"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>电动擦地机</h3>
+    <p>带刷盘的机器在木地板上自己转，两位穿长裙的女仆袖手旁观。常被称作扫地机器人的祖先，不过它被想成人形家务劳动的替代品。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Electric_scrubbing.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_toilette_madame.jpg" data-cap="夫人的梳妆台" aria-label="放大：夫人的梳妆台">
+    <img loading="lazy" src="images/fr_toilette_madame.jpg" alt="夫人的梳妆台"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>夫人的梳妆台</h3>
+    <p>白衣女士端坐镜前，几只机械手替她梳头抹粉，脚下还有一台脚踏泵在给机器供能。机器全自动了，动力还得靠人踩。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Toilette_madame.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_latest_fashion.jpg" data-cap="最新时装裁缝机" aria-label="放大：最新时装裁缝机">
+    <img loading="lazy" src="images/fr_latest_fashion.jpg" alt="最新时装裁缝机"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>最新时装裁缝机</h3>
+    <p>高大的柜式机器，工人从一端送进布料、另一端直接出来成衣，旁边女士等着试穿。19 世纪版的「3D 打印衣服」。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Latest_fashion.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_concierge.jpg" data-cap="机器门房" aria-label="放大：机器门房">
+    <img loading="lazy" src="images/fr_concierge.jpg" alt="机器门房"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>机器门房</h3>
+    <p>戴帽穿长裙的女士站在一台柜式机器与绿色门扉旁。连看门、通报、接待这类服务性劳动也被交给机械，是这套卡片对公寓生活的想象。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Concierge.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_chemical_food.jpg" data-cap="化学晚餐" aria-label="放大：化学晚餐">
+    <img loading="lazy" src="images/fr_chemical_food.jpg" alt="化学晚餐"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>化学晚餐</h3>
+    <p>一家人围坐桌边，白衣侍者模样的人在中间调配瓶瓶罐罐。厨房被实验室接管，是当时对化学最典型的误用式想象。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Chemical_food.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch06">
+  <div class="chapter-head"><span class="chnum">06</span><div><h2>吃饭、种地与取暖：实验室接管厨房和天空</h2><p class="lead">「化学」「电气」「镭」是那个年代的万能词：营养由化学装置合成、小鸡由机器成批孵化、庄稼由联合收割机自己收完、家里靠一块发光的镭取暖，德国人甚至画出了制造天气的机器。农业机械化是命中率最高的预言之一，镭壁炉则是典型时代病。</p></div></div>
+  <div class="count">6 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_farmer.jpg" data-cap="新农民" aria-label="放大：新农民">
+    <img loading="lazy" src="images/fr_farmer.jpg" alt="新农民"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>新农民</h3>
+    <p>一人坐在大型联合收割机上，身后是笔直田垄与电线杆。公认最准的预言之一：农业机械化在 20 世纪真的发生了。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Farmer.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_intensive_breeding.jpg" data-cap="机器孵化与集约养殖" aria-label="放大：机器孵化与集约养殖">
+    <img loading="lazy" src="images/fr_intensive_breeding.jpg" alt="机器孵化与集约养殖"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>机器孵化与集约养殖</h3>
+    <p>女士站在巨大柜式机器前，鸡蛋顺传送带进去、小鸡出来。工业逻辑侵入生命本身最直白的一张。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Intensive_breeding.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_chauffage_au_radium.jpg" data-cap="镭取暖" aria-label="放大：镭取暖">
+    <img loading="lazy" src="images/fr_chauffage_au_radium.jpg" alt="镭取暖"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>镭取暖</h3>
+    <p>一家人围坐在一块发光的圆盘旁取暖。1898 年居里夫妇发现镭，几年后它就成了卡片里的家用壁炉——把刚上新闻的发现直接外推成万能能源。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Chauffage_au_Radium.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_wheather.jpg" data-cap="制造天气" aria-label="放大：制造天气">
+    <img loading="lazy" src="images/de_wheather.jpg" alt="制造天气"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>制造天气</h3>
+    <p>桥上架着带巨轮与喇叭的机器，对着天空作业，远处是城市与帆船。把天气当作可调节的公共工程，比真的能干预气候早了一百年。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._Wheather.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_on_nord.jpg" data-cap="北极旅行团" aria-label="放大：北极旅行团">
+    <img loading="lazy" src="images/de_on_nord.jpg" alt="北极旅行团"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>北极旅行团</h3>
+    <p>绿色极光下，一群穿长大衣的游客站在冰原上，天空飘着飞艇。极地不再是探险禁区，而是旅行目的地——19 世纪末「地球已被用完」的感觉。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AGermany_in_XXI_century._On_Nord.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_cards_sheet_1.jpg" data-cap="《公元 2000 年》整版印刷样张" aria-label="放大：《公元 2000 年》整版印刷样张">
+    <img loading="lazy" src="images/fr_cards_sheet_1.jpg" alt="《公元 2000 年》整版印刷样张"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899–1910 · 法国国家图书馆藏</span></div>
+    <h3>《公元 2000 年》整版印刷样张</h3>
+    <p>未裁切的一整版，能看到「巴黎—北京电气列车」「电气施工」「留声信函」「新式理发」「夫人梳妆」「化学晚餐」等小格并排。原本是塞进香烟盒的纸卡，后改成明信片——这是量产商品，不是个人狂想。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AEn_l%27an_2000_-_Le_train_%C3%A9lectrique_Paris-P%C3%A9kin_-_Chantier_de_construction_%C3%A9lectrique_-_Auto-patins_%C3%A0_roues_-_Missive_phonographique_-_Le_barbier_nouveau_jeu_-_Madame_%C3%A0_sa_toilette_-_Un_d%C3%AEner_chimique_-..._-_btv1b525123332_%281_of_2%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch07">
+  <div class="chapter-head"><span class="chnum">07</span><div><h2>课堂与办公：知识像水一样灌进去</h2><p class="lead">老师把书倒进漏斗，学生头顶接着管子，知识直接输入大脑。学习被理解成传输，教育被理解成下载。同一套卡片还画了口授自动成稿、留声机存声音——都是把信息处理机械化，而且默认它仍发生在一间维多利亚式教室里。</p></div></div>
+  <div class="count">4 幅 · 1 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_school.jpg" data-cap="未来的学校" aria-label="放大：未来的学校">
+    <img loading="lazy" src="images/fr_school.jpg" alt="未来的学校"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>未来的学校</h3>
+    <p>一排学生端坐长凳，每人头顶接着管子；老师把书倒进漏斗，机器把知识直接灌进脑袋。学习被理解成下载——这个比喻到今天也没过时。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._School.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_dictant_courrier.jpg" data-cap="口述信件" aria-label="放大：口述信件">
+    <img loading="lazy" src="images/fr_dictant_courrier.jpg" alt="口述信件"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>口述信件</h3>
+    <p>人对着桌上的喇叭口授，文字自动成稿。语音输入、听写、速记员被取代，都压缩在这一张里。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Dictant_courrier.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_phonograph.jpg" data-cap="留声机进客厅" aria-label="放大：留声机进客厅">
+    <img loading="lazy" src="images/fr_phonograph.jpg" alt="留声机进客厅"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>留声机进客厅</h3>
+    <p>两人坐桌边听大喇叭，女仆站在门口。把声音存下来随时重放，是当时离现实最近也最令人兴奋的技术之一。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Phonograph.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_page107.jpg" data-cap="《二十世纪》插图页" aria-label="放大：《二十世纪》插图页">
+    <img loading="lazy" src="images/fr_robida_page107.jpg" alt="《二十世纪》插图页"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1883 · Robida</span></div>
+    <h3>《二十世纪》插图页</h3>
+    <p>椭圆框里一位女性形象，旁边围着一群小人，是罗比达对「未来公众」的戏谑描绘。他自称「未来的记者」，重点在把机器放进可信的日常。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Robida_vingtieme_siecle_p107_1.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch08">
+  <div class="chapter-head"><span class="chnum">08</span><div><h2>通信与媒体：可视电话、影像信件、听报纸</h2><p class="lead">命中率惊人的一组。罗比达 1883 年的椭圆屏幕能看戏、看新闻、看见通话对象；1900 年的一家人坐着「听」报纸；远方亲友出现在桌面圆形投影里；凡尔纳 1889 年让记者向订阅者「播放」新闻。媒介形态猜对了，社会场景却仍是全家围坐的客厅。</p></div></div>
+  <div class="count">7 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_telephonoscope.jpg" data-cap="「电视电话」与公共屏幕" aria-label="放大：「电视电话」与公共屏幕">
+    <img loading="lazy" src="images/fr_robida_telephonoscope.jpg" alt="「电视电话」与公共屏幕"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1883 · Robida《二十世纪》</span></div>
+    <h3>「电视电话」与公共屏幕</h3>
+    <p>黑白线描：巨大的椭圆屏幕里正上演场面，下方一群观众仰头观看，四周还有飞行器。罗比达的 telephonoscope 一口气猜到了电视、视频通话、直播与监视。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Robida_telephonoscope.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_theatre_chez_soi.png" data-cap="家中剧场" aria-label="放大：家中剧场">
+    <img loading="lazy" src="images/fr_robida_theatre_chez_soi.png" alt="家中剧场"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1883 · Robida《二十世纪》</span></div>
+    <h3>家中剧场</h3>
+    <p>椭圆画框里，一对夫妇坐在自家扶手椅上观看圆形屏幕中的演出。家具、窗帘、壁纸都还是 1880 年代的——新媒介总被放进旧客厅。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Albert_Robida_-_Le_th%C3%A9%C3%A2tre_chez_soi_par_le_t%C3%A9l%C3%A9phonoscope.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_audio_journal.jpg" data-cap="有声报纸" aria-label="放大：有声报纸">
+    <img loading="lazy" src="images/fr_audio_journal.jpg" alt="有声报纸"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>有声报纸</h3>
+    <p>一家人围坐在花地毯客厅，男主人靠在安乐椅上，旁边大喇叭正在「念」新闻。播客与语音播报的祖师爷，但社会场景仍是全家整整齐齐坐在一起。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Audio_journal.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_correspondance_cinema.jpg" data-cap="影像信件" aria-label="放大：影像信件">
+    <img loading="lazy" src="images/fr_correspondance_cinema.jpg" alt="影像信件"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>影像信件</h3>
+    <p>两人坐在小桌旁，桌上升起圆形投影，远方亲友出现在画面里。视频通话被想成「会动的信」，而不是电话的升级版。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Correspondance_cinema.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_verne_2889.jpg" data-cap="2889 年一个记者的一天" aria-label="放大：2889 年一个记者的一天">
+    <img loading="lazy" src="images/fr_verne_2889.jpg" alt="2889 年一个记者的一天"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1889 · 凡尔纳原著 / George Roux 插图</span></div>
+    <h3>2889 年一个记者的一天</h3>
+    <p>黑白插图里，巨大的喇叭与传输设备占据前景，背景是云层中的飞行器。凡尔纳笔下的新闻业已经能向订阅者「播放」新闻、跨洋传送影像——信息社会的雏形。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:%27La_Journ%C3%A9e_d%E2%80%99un_journaliste_am%C3%A9ricain_en_2889%27_by_George_Roux_1.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_theater.jpg" data-cap="远程观剧的厅堂" aria-label="放大：远程观剧的厅堂">
+    <img loading="lazy" src="images/de_theater.jpg" alt="远程观剧的厅堂"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>远程观剧的厅堂</h3>
+    <p>室内一侧立着白色屏幕／舞台，观众坐在暗处，旁边有人解说。与罗比达的家中剧场几乎同时出现，但德国把它画成公共厅堂而非私人客厅。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AGermany_in_XXI_century._Theater.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_vie_electrique.png" data-cap="《电气生活》插图" aria-label="放大：《电气生活》插图">
+    <img loading="lazy" src="images/fr_robida_vie_electrique.png" alt="《电气生活》插图"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1890 · Robida</span></div>
+    <h3>《电气生活》插图</h3>
+    <p>黑白线描，一位女士被各种电气装置和人形小精灵包围。罗比达常一边画未来一边开玩笑，跟后来严肃的科幻插画很不一样。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AAlbert_Rodida_-_La_Vie_Electrique_-_illustration_p43.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch09">
+  <div class="chapter-head"><span class="chnum">09</span><div><h2>看病与身体：远程医疗比互联网早一百年</h2><p class="lead">这一章几乎全是新补的领域：医生对着带显示装置的电话诊病、手术室挂起投影幕做示教、1925 年的「无线电诊断」把远方病人显示在圆屏上；法国人把细菌画成可网捕的怪兽，罗比达让人上山住进空气疗养塔。同期日本预言「传染病灭绝、无痛电手术、寿命 125 岁」，俄国卡片写「无尘无菌的空气」——未来被普遍想成一次公共卫生的彻底胜利。</p></div></div>
+  <div class="count">6 幅 · 3 个国家</div>
+  <div class="grid"><figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_doctor_telephone.jpg" data-cap="电话里的医生" aria-label="放大：电话里的医生">
+    <img loading="lazy" src="images/gb_doctor_telephone.jpg" alt="电话里的医生"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">19 世纪末 · Wellcome Collection</span></div>
+    <h3>电话里的医生</h3>
+    <p>医生坐在桌前，对着一套连接着显示装置的电话设备诊视。远程医疗的想象比互联网早了近一个世纪，只是「带宽」被理解为一对一的电话线。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:A_doctor_on_the_telephone_%28which_is_linked_up_to_a_televisio_Wellcome_V0011546.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_surgery_projected.jpg" data-cap="手术直播教学" aria-label="放大：手术直播教学">
+    <img loading="lazy" src="images/gb_surgery_projected.jpg" alt="手术直播教学"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">19 世纪末 · Wellcome Collection</span></div>
+    <h3>手术直播教学</h3>
+    <p>手术室上方挂着投影幕布，把手术现场放大给一排围观者看。这是「远程示教／手术转播」的早期想象，也顺带预言了后来医学影像与内窥镜的观看方式。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:A_periscope_being_used_above_an_operation_which_is_projected_Wellcome_L0014356.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_diagnosis_radio.webp" data-cap="无线电诊断" aria-label="放大：无线电诊断">
+    <img loading="lazy" src="images/us_diagnosis_radio.webp" alt="无线电诊断"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1925 · 杂志广告式插画</span></div>
+    <h3>无线电诊断</h3>
+    <p>一位穿蓝衣的医护坐在设备前，圆形屏幕里显示着远方病人，红色机箱上写着「Diagnosis by Radio」。远程问诊被画成一件可以摆在桌上的家用电器。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Diagnosis_By_Radio%2C_1925_%28telemedicine%29.webp" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_microbes.jpg" data-cap="猎捕微生物" aria-label="放大：猎捕微生物">
+    <img loading="lazy" src="images/fr_microbes.jpg" alt="猎捕微生物"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>猎捕微生物</h3>
+    <p>穿黄袍的人举着网兜追捕放大成怪物状的细菌，背景是巨大实验器皿。巴斯德学说普及不到二十年，公共卫生就被画成一场狩猎。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Microbes.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_cures_air.jpg" data-cap="山地空气疗养院" aria-label="放大：山地空气疗养院">
+    <img loading="lazy" src="images/fr_robida_cures_air.jpg" alt="山地空气疗养院"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1880s · Robida</span></div>
+    <h3>山地空气疗养院</h3>
+    <p>层层叠叠的塔状疗养院建在山上，人们专程去「吸正确的空气」。在空调和空气净化之前，洁净空气被想成一种要出门去取的疗养资源。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Albert_Robida_-_Cures_d%27air_dans_la_montagne.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_futuristic_vision.jpg" data-cap="一幅未来全景" aria-label="放大：一幅未来全景">
+    <img loading="lazy" src="images/gb_futuristic_vision.jpg" alt="一幅未来全景"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">19 世纪末 · Wellcome Collection</span></div>
+    <h3>一幅未来全景</h3>
+    <p>密集的城市全景里，桥梁、飞行器、人群与各种装置层层叠叠。它不像在讲某件发明，更像在说「未来＝一切都 simultanément 变多」。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:A_futuristic_vision_Wellcome_V0041098.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch10">
+  <div class="chapter-head"><span class="chnum">10</span><div><h2>娱乐、体育与休闲：技术只换场地，不换玩法</h2><p class="lead">机器人乐团演奏而观众照样衣冠楚楚；网球、竞速、狩猎、气球聚会统统搬到天上或水上重做一遍，规则一点没改。也有真正的社会想象：女子冰球里的「新女性」、歌剧院大道的夜空庆典，以及罗比达猜的「娱乐会变得更吵更满」。</p></div></div>
+  <div class="count">8 幅 · 3 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robot_orchestra.jpg" data-cap="机器人乐团" aria-label="放大：机器人乐团">
+    <img loading="lazy" src="images/fr_robot_orchestra.jpg" alt="机器人乐团"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>机器人乐团</h3>
+    <p>舞台上一排机械人偶整齐演奏，台下观众衣冠楚楚正襟危坐。连艺术表演都交给机器，而礼仪一丝不变——整套卡片最辛辣的反差。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Robot_orchestra.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_cup.jpg" data-cap="空中竞速与颁奖" aria-label="放大：空中竞速与颁奖">
+    <img loading="lazy" src="images/fr_air_cup.jpg" alt="空中竞速与颁奖"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>空中竞速与颁奖</h3>
+    <p>一排带翼飞行器停靠在观礼平台前，人群围看，黄色调喜庆。连体育赛事的组织形式都原样搬到了空中。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Air_cup.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_hunters.jpg" data-cap="空中狩猎" aria-label="放大：空中狩猎">
+    <img loading="lazy" src="images/fr_air_hunters.jpg" alt="空中狩猎"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>空中狩猎</h3>
+    <p>红衣猎人展开翅膀在田野上空追逐猎物，橙黄天空。休闲活动被整体平移到第三维，规则一点没改。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Air_hunters.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_women_hockey.png" data-cap="未来的女子冰球" aria-label="放大：未来的女子冰球">
+    <img loading="lazy" src="images/us_women_hockey.png" alt="未来的女子冰球"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">19 世纪末 · 明信片／杂志插图</span></div>
+    <h3>未来的女子冰球</h3>
+    <p>一位女性穿运动装、手持球杆站立，姿态松弛自信。在长裙仍是女性标准着装的时代，「女性参加竞技运动」本身就是一种对未来的想象。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AA_Dream_of_the_Future_%28Women%27s_Ice_Hockey%29.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_opera_avenue.jpg" data-cap="歌剧院大道的夜空" aria-label="放大：歌剧院大道的夜空">
+    <img loading="lazy" src="images/fr_opera_avenue.jpg" alt="歌剧院大道的夜空"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>歌剧院大道的夜空</h3>
+    <p>城市上空挤满气球、飞艇与带翼飞行器，人群在屋顶和阳台观看。夜生活与公共庆典被叠加到天上，是当时对「不夜城」最直白的表达。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Opera_avenue.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_opera_2000.jpg" data-cap="2000 年的歌剧院" aria-label="放大：2000 年的歌剧院">
+    <img loading="lazy" src="images/fr_robida_opera_2000.jpg" alt="2000 年的歌剧院"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1882 · Robida</span></div>
+    <h3>2000 年的歌剧院</h3>
+    <p>粉紫色讽刺漫画：包厢、舞台、观众挤成一团，有人飞在半空，指挥与歌手乱作一片。罗比达猜的是娱乐会变得更吵更满，而不是更安静更高清。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AA_night_at_the_opera_in_the_year_2000%2C_cartoon_by_Albert_Robida%2C_ca._1882.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_in_air.jpg" data-cap="空中篮篮与气球" aria-label="放大：空中篮篮与气球">
+    <img loading="lazy" src="images/de_in_air.jpg" alt="空中篮篮与气球"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>空中篮篮与气球</h3>
+    <p>一群人坐在气球吊篮里飘在云上，四周还有别的气球。飞行被想成一种从容的社交休闲，而非通勤工具。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._In_air.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_on_water.jpg" data-cap="水面气球聚会" aria-label="放大：水面气球聚会">
+    <img loading="lazy" src="images/de_on_water.jpg" alt="水面气球聚会"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>水面气球聚会</h3>
+    <p>水边浮台上，一群盛装的人头顶飘着许多气球，有人坐在吊篮里。德国这套卡片把「新技术」首先理解成新的聚会方式。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Germany_in_XXI_century._On_water.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch11">
+  <div class="chapter-head"><span class="chnum">11</span><div><h2>战争、秩序与风险：进步也会出事</h2><p class="lead">1899 年就画出了装甲车加机枪、云层上的空战，十几年后都成真；飞行警察、未来刑警、空中劫掠随之升空。最特别的是那幅「未来的空难」——绝大多数同代图像只画进步，几乎没人愿意想象新技术的事故。罗比达在一战前 30 年画毒气与轰炸，态度从戏谑转向沉重。</p></div></div>
+  <div class="count">8 幅 · 3 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_war_cars.jpg" data-cap="战斗车" aria-label="放大：战斗车">
+    <img loading="lazy" src="images/fr_war_cars.jpg" alt="战斗车"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899 · En L&#x27;An 2000 系列</span></div>
+    <h3>战斗车</h3>
+    <p>带刺车轮的装甲车上架着多管机枪，士兵在沙地操作。1899 年画出的「汽车＋机枪」，十几年后就是一战装甲车。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._War_cars.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_battle.jpg" data-cap="空战" aria-label="放大：空战">
+    <img loading="lazy" src="images/fr_air_battle.jpg" alt="空战"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899 · En L&#x27;An 2000 系列</span></div>
+    <h3>空战</h3>
+    <p>黄色飞艇与红色小飞机在云层上互相开火。作画时动力飞行尚未实现，四年后莱特兄弟才上天；战争与农业是这套图里命中率最高的两类。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_battle.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_police.jpg" data-cap="空中警察" aria-label="放大：空中警察">
+    <img loading="lazy" src="images/fr_air_police.jpg" alt="空中警察"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>空中警察</h3>
+    <p>几名蓝红制服的警察展开蝙蝠翼在天上追捕，手里还举着警棍。天空被画成可以走上去的街道，秩序也跟着升空。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_police.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_criminal_police.jpg" data-cap="未来刑警" aria-label="放大：未来刑警">
+    <img loading="lazy" src="images/de_criminal_police.jpg" alt="未来刑警"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">约 1900 · Deutschland im XXI. Jahrhundert</span></div>
+    <h3>未来刑警</h3>
+    <p>卡片标题写着 Zukünftige Kriminal-Polizei：一人举灯照亮砖墙，女士站在门边，旁边是穿长礼服的探员。破案被想成技术活，隐约透出对透视与现场取证的兴趣。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AGermany_in_XXI_century._Criminal_police.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_guerre_cover.jpg" data-cap="《二十世纪的战争》封面" aria-label="放大：《二十世纪的战争》封面">
+    <img loading="lazy" src="images/fr_robida_guerre_cover.jpg" alt="《二十世纪的战争》封面"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1887 · Robida</span></div>
+    <h3>《二十世纪的战争》封面</h3>
+    <p>绿色封面上红色飞行器掠过，下方是炮弹与硝烟。罗比达在一战前近 30 年就画了毒气、空中轰炸与全民动员。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ARobida_-_La_Guerre_au_vingti%C3%A8me_si%C3%A8cle_-_cover.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_shipwreck_future.jpg" data-cap="未来的空难" aria-label="放大：未来的空难">
+    <img loading="lazy" src="images/us_shipwreck_future.jpg" alt="未来的空难"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">约 1900 · Ein Blick in das Jahr 2000 报刊插图</span></div>
+    <h3>未来的空难</h3>
+    <p>黑白报纸式插图：飞行器坠毁、人群惊慌、碎片四散。极罕见的「未来也会出事」想象——绝大多数同代图像只画进步，不画事故。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AA_shipwreck_of_the_future%2C_when_passengers_are_carried_between_Europe_and_America_in_the_air_LOC_3608741612.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_little_robbers.jpg" data-cap="空中劫掠" aria-label="放大：空中劫掠">
+    <img loading="lazy" src="images/fr_little_robbers.jpg" alt="空中劫掠"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>空中劫掠</h3>
+    <p>棕色巨翼下，红衣小人在半空抢夺东西。有飞行就有空中犯罪——这套卡片连社会问题的「升级版」都想到了。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:France_in_XXI_Century._Little_robbers.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_robida_vingtieme_cover.jpg" data-cap="《二十世纪》封面" aria-label="放大：《二十世纪》封面">
+    <img loading="lazy" src="images/fr_robida_vingtieme_cover.jpg" alt="《二十世纪》封面"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1883 · Robida</span></div>
+    <h3>《二十世纪》封面</h3>
+    <p>绿色底、红色装饰字 VINGTIÈME SIÈCLE，中间是穿红衣的人物与机械。这本书设定在 1950 年代，把屏幕、潜艇、直升机、气动管道全塞进巴黎日常。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Robida_-_Le_vingti%C3%A8me_si%C3%A8cle_-_cover.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch12">
+  <div class="chapter-head"><span class="chnum">12</span><div><h2>地方想象：我们这儿的未来长什么样</h2><p class="lead">最容易被忽略、也最能体现国家差异的一类。奥地利在萨尔茨堡山城上空添几只飞艇，德国把「未来纽伦堡」做成实寄明信片，波兰小城普鲁德尼克同时有了电车和飞艇，美国小镇把地铁标牌插进土路、把海滩叠成三层，澳大利亚给珀斯配一架大飞机。共同公式：家乡永远认得出，只是天上多了些东西。</p></div></div>
+  <div class="count">7 幅 · 5 个国家</div>
+  <div class="grid"><figure class="card" data-country="AT">
+  <button class="imgbtn" data-src="images/at_salzburg_2000.jpg" data-cap="2000 年的萨尔茨堡" aria-label="放大：2000 年的萨尔茨堡">
+    <img loading="lazy" src="images/at_salzburg_2000.jpg" alt="2000 年的萨尔茨堡"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">奥地利</span><span class="year">约 1900 · 奥地利明信片</span></div>
+    <h3>2000 年的萨尔茨堡</h3>
+    <p>山城全景照常被添上飞艇与气球，城堡与教堂纹丝不动，左下还有寄信人的手写附言。地方版未来想象的共同公式：家乡永远认得出，只是天上多了些东西。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AF_Gareis_jun_Salzburg_im_Jahre_2000_G_1244_I.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="DE">
+  <button class="imgbtn" data-src="images/de_nurnberg_1907.png" data-cap="1907 年的「未来纽伦堡」" aria-label="放大：1907 年的「未来纽伦堡」">
+    <img loading="lazy" src="images/de_nurnberg_1907.png" alt="1907 年的「未来纽伦堡」"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">德国</span><span class="year">1907 · 德国明信片</span></div>
+    <h3>1907 年的「未来纽伦堡」</h3>
+    <p>上半幅是老城上空飘着飞艇与气球的彩色想象，下半幅是实寄明信片的手写地址与邮戳。「未来」被当成旅游纪念品卖给本地人。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:AK-_N%C3%BCrnberg_in_der_Zukunft_-_1907.png" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="PL">
+  <button class="imgbtn" data-src="images/pl_prudnik_future.jpg" data-cap="普鲁德尼克的未来" aria-label="放大：普鲁德尼克的未来">
+    <img loading="lazy" src="images/pl_prudnik_future.jpg" alt="普鲁德尼克的未来"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">波兰</span><span class="year">20 世纪初 · 波兰明信片</span></div>
+    <h3>普鲁德尼克的未来</h3>
+    <p>彩色街景里，电车与飞艇同时出现在东欧小城的老建筑前。把全球性的技术想象落到一座具体小城，是这批明信片最动人的地方。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AWizja_przysz%C5%82o%C5%9Bci_na_widok%C3%B3wce_z_Prudnika.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_boston_copley.jpg" data-cap="波士顿科普利广场的未来" aria-label="放大：波士顿科普利广场的未来">
+    <img loading="lazy" src="images/us_boston_copley.jpg" alt="波士顿科普利广场的未来"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1910 · 美国明信片</span></div>
+    <h3>波士顿科普利广场的未来</h3>
+    <p>绿色有轨电车、气球、飞艇与红砖老建筑挤在同一画面。美国这套「本城的未来」明信片常带调侃，技术进步被画成一场热闹的街道拥堵。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ACopley_Square%2C_Boston%2C_Massachusetts%2C_in_the_future%2C_1910_-_Postcard_%284717175868%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_revere_beach.jpg" data-cap="里维尔海滩的未来" aria-label="放大：里维尔海滩的未来">
+    <img loading="lazy" src="images/us_revere_beach.jpg" alt="里维尔海滩的未来"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">1909 · 美国明信片</span></div>
+    <h3>里维尔海滩的未来</h3>
+    <p>海滩上挤满度假的人，空中是飞艇、气球与悬挂铁路。休闲空间被垂直堆叠——连度假都要分层。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ARevere_Beach_in_the_future_%28Massachusetts%29%2C_1909_-_Postcard_%284727278562%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="US">
+  <button class="imgbtn" data-src="images/us_wilmington_future.jpg" data-cap="「未来的威尔明顿镇」" aria-label="放大：「未来的威尔明顿镇」">
+    <img loading="lazy" src="images/us_wilmington_future.jpg" alt="「未来的威尔明顿镇」"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">美国</span><span class="year">约 1908 · 佛蒙特州</span></div>
+    <h3>「未来的威尔明顿镇」</h3>
+    <p>实拍小镇街景被塞满飞艇、热气球、双翼机、高架铁路和「Subway to New York」路牌。未来不是新建一座城，而是把新技术一股脑堆在自家门口的土路上。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AWilmington%2C_Vermont%2C_in_the_future%2C_circa_1908_-_Postcard_%284843405922%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="AU">
+  <button class="imgbtn" data-src="images/au_perth_2029.jpg" data-cap="「2029 年的珀斯」" aria-label="放大：「2029 年的珀斯」">
+    <img loading="lazy" src="images/au_perth_2029.jpg" alt="「2029 年的珀斯」"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">澳大利亚</span><span class="year">20 世纪上半叶 · 澳大利亚明信片</span></div>
+    <h3>「2029 年的珀斯」</h3>
+    <p>黑白画面里一架大型飞机掠过城市上空，地面是低矮的城区。南半球的版本少了欧洲的繁复幻想，更像对航空时代的一句平实预告。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3APerth_in_2029.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch13">
+  <div class="chapter-head"><span class="chnum">13</span><div><h2>东亚的另一条路：未来是政治，不是机器</h2><p class="lead">同时期的东亚几乎没有量产的未来明信片，想象主要承载在小说与画报里。日本明治的「未来记」是政治小说：1885 年《二十三年未来記》借未来评当下国会，1900 年提前预演日俄战争，《内地杂居未来之梦》焦虑的是国族与社会秩序。中国晚清「科学小说」把未来当救国方案：梁启超《新中国未来记》(1902)、吴趼人《新石头记》(1905)、陆士谔《绘图新中国》(1910) 写到浦东办万国博览会、黄浦江大桥、江底电车隧道、教育普及、国产电汽车——几乎全中。《点石斋画报》(1884 起) 则把听来的西洋飞行器画成带鸟翼的船和装飞轮的车篷。欧洲在画飞行邮差，东亚在写「国家会变成什么样」。</p></div></div>
+  <div class="count">5 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="CN">
+  <button class="imgbtn" data-src="images/cn_dszb_cover.jpg" data-cap="《点石斋画报》第一册书影" aria-label="放大：《点石斋画报》第一册书影">
+    <img loading="lazy" src="images/cn_dszb_cover.jpg" alt="《点石斋画报》第一册书影"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">中国</span><span class="year">1884 · 上海</span></div>
+    <h3>《点石斋画报》第一册书影</h3>
+    <p>中国最早的新闻画报之一，用传统线描报道西洋新器。《妙制飞车》把飞行器画成带飞轮的车篷，《御风行舟》画成「一艘装了四只鸟翼的船」，《气球破敌》则让气球载炮，写「则水陆之兵可以废」。上图为该刊原册书影，国立／网络公藏扫描。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ANCPSSD-70041817_%E9%BB%9E%E7%9F%B3%E9%BD%8B%E7%95%AB%E5%A0%B1_%E7%AC%AC%E4%B8%80%E5%86%8C.pdf" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="JP">
+  <button class="imgbtn" data-src="images/jp_1885_future_record.jpg" data-cap="《二十三年未来記》书影" aria-label="放大：《二十三年未来記》书影">
+    <img loading="lazy" src="images/jp_1885_future_record.jpg" alt="《二十三年未来記》书影"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">日本</span><span class="year">1885 · 末广重恭</span></div>
+    <h3>《二十三年未来記》书影</h3>
+    <p>书名指明治二十三年（1890）。人物在读报时批评政治，对书中人是回顾历史、对当时读者就是时评。用「未来已完成」的口吻倒着写现在，是明治未来记的标准结构。国立国会图书馆藏。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ANDL887618_%E4%BA%8C%E5%8D%81%E4%B8%89%E5%B9%B4%E6%9C%AA%E6%9D%A5%E8%A8%98.pdf" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="JP">
+  <button class="imgbtn" data-src="images/jp_1882_future_record.jpg" data-cap="《明治十五年未来記》书影" aria-label="放大：《明治十五年未来記》书影">
+    <img loading="lazy" src="images/jp_1882_future_record.jpg" alt="《明治十五年未来記》书影"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">日本</span><span class="year">1882 · 日本</span></div>
+    <h3>《明治十五年未来記》书影</h3>
+    <p>明治早期「未来记」体裁封面，竖排汉字书名配装饰边框。这类书不画飞行器，而是借未来的历史评论当下政治——日本最早的未来想象是政治小说，不是技术图册。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ANDL899562_%E6%98%8E%E6%B2%BB%E5%8D%81%E4%BA%94%E5%B9%B4%E6%9C%AA%E6%9D%A5%E8%A8%98.pdf" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="JP">
+  <button class="imgbtn" data-src="images/jp_1900_war_future.jpg" data-cap="《日俄战争未来记》封面" aria-label="放大：《日俄战争未来记》封面">
+    <img loading="lazy" src="images/jp_1900_war_future.jpg" alt="《日俄战争未来记》封面"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">日本</span><span class="year">1900 · 日本</span></div>
+    <h3>《日俄战争未来记》封面</h3>
+    <p>日俄战争爆发前四年就先出版了「想象中的战记」，封面是蜘蛛网与人物。未来想象在这里承担非常现实的舆论功能：预演一场还没打的仗。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ANDL887639_%E6%97%A5%E9%9C%B2%E6%88%A6%E4%BA%89%E6%9C%AA%E6%9D%A5%E8%A8%98_-_%E6%84%89%E7%B5%B6%E5%BF%AB%E7%B5%B6_%E6%98%8E%E6%B2%BB33%E5%B9%B411%E6%9C%88%E7%99%BA%E8%A1%8C.pdf" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="JP">
+  <button class="imgbtn" data-src="images/jp_future_dream.jpg" data-cap="《内地杂居未来之梦》书影" aria-label="放大：《内地杂居未来之梦》书影">
+    <img loading="lazy" src="images/jp_future_dream.jpg" alt="《内地杂居未来之梦》书影"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">日本</span><span class="year">明治期 · 日本</span></div>
+    <h3>《内地杂居未来之梦》书影</h3>
+    <p>橙色封面配绿色布面精装的实物照片。标题里的「内地杂居」指外国人到日本内地居住的争议——当时日本人的未来焦虑核心是社会秩序与国族，不是飞天汽车。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AWUL-tomon_18726_%E5%86%85%E5%9C%B0%E9%9B%91%E5%B1%85%E6%9C%AA%E6%9D%A5%E3%81%AE%E5%A4%A2.pdf" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch14">
+  <div class="chapter-head"><span class="chnum">14</span><div><h2>更早的十九世纪：1804—1864</h2><p class="lead">把时间往前推：1804 年的 Minerva 还是带翅膀的球体，1828 年英国人拿蒸汽机械开玩笑，1843 年才有像样的固定翼设计，1844 年 Grandville 把行星和动物混进讽刺版画。那时还没有「科幻」这个词，未来属于奇想画、招股书和漫画，而不是商品卡片。</p></div></div>
+  <div class="count">7 幅 · 2 个国家</div>
+  <div class="grid"><figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_minerva_1804.jpg" data-cap="「Minerva」空中飞行器" aria-label="放大：「Minerva」空中飞行器">
+    <img loading="lazy" src="images/gb_minerva_1804.jpg" alt="「Minerva」空中飞行器"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1804 · 英国</span></div>
+    <h3>「Minerva」空中飞行器</h3>
+    <p>球状／塔状装置带着翅膀与吊篮，周围有飞鸟，彩色线描。比蒸汽飞机还早四十年，飞行想象仍属于博物学与奇想画的范畴。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Minerva%2C_an_aerial_vessel_destined_for_discoveries_1804.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_minerva_1864.jpg" data-cap="1864 年的「Minerva」" aria-label="放大：1864 年的「Minerva」">
+    <img loading="lazy" src="images/gb_minerva_1864.jpg" alt="1864 年的「Minerva」"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1864 · 英国</span></div>
+    <h3>1864 年的「Minerva」</h3>
+    <p>粉色纸上的红色线描，笼状球体载着吊篮升空。六十年过去，飞行器的外形几乎没变——因为动力问题根本还没解决。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFuture_airship_travel_-_%22Minerva%22_-_1864.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_1828_caricature.jpg" data-cap="1828 年的机械讽刺画" aria-label="放大：1828 年的机械讽刺画">
+    <img loading="lazy" src="images/gb_1828_caricature.jpg" alt="1828 年的机械讽刺画"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1828 · 英国</span></div>
+    <h3>1828 年的机械讽刺画</h3>
+    <p>一群人围着笨重的蒸汽机械挤成一团，黑白漫画。在「未来」变成一门生意之前，它首先是被拿来开玩笑的对象。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File:Caricature_1828.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_march_intellect.jpg" data-cap="《智识的行进》" aria-label="放大：《智识的行进》">
+    <img loading="lazy" src="images/gb_march_intellect.jpg" alt="《智识的行进》"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1828 · 英国讽刺版画</span></div>
+    <h3>《智识的行进》</h3>
+    <p>彩色画面塞满奇妙机械、空中飞人、写着标语的建筑。这是工业时代早期的「进步」自画像：热闹、混乱、带点自嘲。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AMarch_of_Intellect_n%C2%B02.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_cruikshank_aerial.jpg" data-cap="未来的空中飞行" aria-label="放大：未来的空中飞行">
+    <img loading="lazy" src="images/gb_cruikshank_aerial.jpg" alt="未来的空中飞行"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">19 世纪 · George Cruikshank</span></div>
+    <h3>未来的空中飞行</h3>
+    <p>黑白竖幅像漫画分格，层层叠着各式飞行器、气球与在空中活动的人。把天空想象成拥挤的公共空间，比法国卡片早了几十年。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ACruikshank%2C_George_%E2%80%94_Aerial_flight_in_the_future.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="GB">
+  <button class="imgbtn" data-src="images/gb_1843_steam_carriage.jpg" data-cap="空中蒸汽马车（另一版）" aria-label="放大：空中蒸汽马车（另一版）">
+    <img loading="lazy" src="images/gb_1843_steam_carriage.jpg" alt="空中蒸汽马车（另一版）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">英国</span><span class="year">1843 · 英国</span></div>
+    <h3>空中蒸汽马车（另一版）</h3>
+    <p>同一架 Ariel 飞过田野，地面密密麻麻的人仰头张望。19 世纪中期对未来的想象是「把蒸汽机送上天」，而且一定要画成一场公众围观的事件。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3A1843_engraving_of_the_Aerial_Steam_Carriage.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_grandville_1844.jpg" data-cap="《另一个世界》插页" aria-label="放大：《另一个世界》插页">
+    <img loading="lazy" src="images/fr_grandville_1844.jpg" alt="《另一个世界》插页"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1844 · J.-J. Grandville</span></div>
+    <h3>《另一个世界》插页</h3>
+    <p>动物、机械、行星混在一起的荒诞版画，属于讽刺画与奇幻文学的年代。当时还没有「科幻」这个词。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AUn_autre_monde_1844_%2869841699%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch15">
+  <div class="chapter-head"><span class="chnum">15</span><div><h2>星空：一个几乎缺席的角落</h2><p class="lead">奇怪但确凿：法国那 87 张设想 2000 年的卡片里几乎没有太空旅行，天文仍是坐在窗前用望远镜看。真正离开地球的图像来自梅里爱 1902 年的《月球旅行记》——炮弹射进月亮的眼睛，是荒诞喜剧不是工程预言。日本 1882 年《星世界旅行》已经写行星文明，但视觉上的太空时代要等二战后才开始。他们看对了天空，却没抬头看更远。</p></div></div>
+  <div class="count">5 幅 · 1 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_melies_moon_eye.jpg" data-cap="炮弹撞进月亮的眼睛" aria-label="放大：炮弹撞进月亮的眼睛">
+    <img loading="lazy" src="images/fr_melies_moon_eye.jpg" alt="炮弹撞进月亮的眼睛"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1902 · 梅里爱《月球旅行记》</span></div>
+    <h3>炮弹撞进月亮的眼睛</h3>
+    <p>电影史上最著名的一张脸：炮弹形飞船正好插在月球右眼里。这是当时少数真正离开地球的图像，而且以荒诞喜剧而非工程预言的方式出现。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AA_Trip_to_the_Moon_%28Le_Voyage_dans_la_Lune%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_melies_poster.jpg" data-cap="《月球旅行记》海报" aria-label="放大：《月球旅行记》海报">
+    <img loading="lazy" src="images/fr_melies_poster.jpg" alt="《月球旅行记》海报"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1902 · 梅里爱</span></div>
+    <h3>《月球旅行记》海报</h3>
+    <p>线描海报上月亮脸、炮弹与一群戴尖帽的探险者挤在一起。它与法国卡片同年出现，却几乎是两个世界：一边认真设计 2000 年的日常，一边把宇宙当童话舞台。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AVoyage_dans_la_Lune_affiche.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_melies_moon.jpg" data-cap="月球人脸（剧照）" aria-label="放大：月球人脸（剧照）">
+    <img loading="lazy" src="images/fr_melies_moon.jpg" alt="月球人脸（剧照）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1902 · 梅里爱《月球旅行记》</span></div>
+    <h3>月球人脸（剧照）</h3>
+    <p>同一镜头的定格：月亮长着眼睛鼻子嘴，表情又惊又恼。太空被人格化了，还不是一个可以抵达的地方。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3ALe_Voyage_dans_la_lune.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_astronomia.jpg" data-cap="天文观测者" aria-label="放大：天文观测者">
+    <img loading="lazy" src="images/fr_astronomia.jpg" alt="天文观测者"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>天文观测者</h3>
+    <p>一人坐在窗前，用巨大喇叭状仪器对准桌上的天球。整套 87 张卡片几乎没有太空旅行，天文仍被理解成坐在家里用望远镜看。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Astronomia.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_cards_sheet_2.jpg" data-cap="《公元 2000 年》整版样张（其二）" aria-label="放大：《公元 2000 年》整版样张（其二）">
+    <img loading="lazy" src="images/fr_cards_sheet_2.jpg" alt="《公元 2000 年》整版样张（其二）"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1910 · 法国国家图书馆藏</span></div>
+    <h3>《公元 2000 年》整版样张（其二）</h3>
+    <p>含「空中出租车：司机，在卢浮宫停一下！」「空中赛艇」「乡村邮差」「空中独木舟」等。整版看最能体会这是一条成熟的商业印刷产品线。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AEn_l%27an_2000_-_Station_d%27a%C3%A9ro-cab_-_Pilote_%21_Arr%C3%AAtez-moi_au_Louvre_-_Les_r%C3%A9gates_a%C3%A9riennes_-_Le_facteur_rural_-_Une_m%C3%A9prise_f%C3%A2cheuse_-_Une_p%C3%A9rissoire_a%C3%A9rienne_-_estampe_-_Jean-Marc_C%C3%B4t%C3%A9_-_btv1b525123260_%281_of_2%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section><section class="chapter" id="ch16">
+  <div class="chapter-head"><span class="chnum">16</span><div><h2>他们没想到的：衣服、螺旋桨与信息</h2><p class="lead">把所有图摊开，最刺眼的不是画错了什么，而是什么都没变：1900 年想象 2000 年，画中人仍穿长裙、礼帽、紧身外套，仍有仆人、仍围坐客厅听一张报纸，性别分工与阶级秩序原封不动。机器全靠螺旋桨、齿轮、皮带和管子，因为那是当时唯一能想到的「先进」的样子。没有计算机、网络、手机、核能、生态危机，也没有全球化供应链。预言从来不是关于未来，而是把当下最显眼的那条线，用力往前延长了一百年。</p></div></div>
+  <div class="count">5 幅 · 1 个国家</div>
+  <div class="grid"><figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_ship.jpg" data-cap="船形飞艇" aria-label="放大：船形飞艇">
+    <img loading="lazy" src="images/fr_air_ship.jpg" alt="船形飞艇"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>船形飞艇</h3>
+    <p>红漆木船装在巨大网状气囊下面，船舷站着乘客。当时的想象普遍认为未来飞行器只是给现有的船和马车装上翅膀或螺旋桨。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_ship.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_air_rescue.jpg" data-cap="海上救生" aria-label="放大：海上救生">
+    <img loading="lazy" src="images/fr_air_rescue.jpg" alt="海上救生"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>海上救生</h3>
+    <p>黄色双翼机贴着海面飞行，机翼下有人正被从水里拉起。1899 年的卡片已经在画成体系的空中救援。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Air_rescue.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_fishing.jpg" data-cap="钓海鸥与骑鱼" aria-label="放大：钓海鸥与骑鱼">
+    <img loading="lazy" src="images/fr_fishing.jpg" alt="钓海鸥与骑鱼"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>钓海鸥与骑鱼</h3>
+    <p>海面上有人举长竿从空中钓海鸥，另一些人骑在大鱼背上，红色小人配蓝色浪头。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Fishing.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_race_in_pacific.jpg" data-cap="太平洋赛马" aria-label="放大：太平洋赛马">
+    <img loading="lazy" src="images/fr_race_in_pacific.jpg" alt="太平洋赛马"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">约 1900 · En L&#x27;An 2000 系列</span></div>
+    <h3>太平洋赛马</h3>
+    <p>骑着海马与海豚的骑手在浪尖冲刺，岸边插着红旗。把赛马场搬到海上——技术只换场地，不换玩法。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AFrance_in_XXI_Century._Race_in_Pacific.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure>
+<figure class="card" data-country="FR">
+  <button class="imgbtn" data-src="images/fr_cards_sheet_1.jpg" data-cap="《公元 2000 年》整版印刷样张" aria-label="放大：《公元 2000 年》整版印刷样张">
+    <img loading="lazy" src="images/fr_cards_sheet_1.jpg" alt="《公元 2000 年》整版印刷样张"><span class="zoom">放大 ↗</span>
+  </button>
+  <figcaption>
+    <div class="cardmeta"><span class="flag">法国</span><span class="year">1899–1910 · 法国国家图书馆藏</span></div>
+    <h3>《公元 2000 年》整版印刷样张</h3>
+    <p>未裁切的一整版，能看到「巴黎—北京电气列车」「电气施工」「留声信函」「新式理发」「夫人梳妆」「化学晚餐」等小格并排。原本是塞进香烟盒的纸卡，后改成明信片——这是量产商品，不是个人狂想。</p>
+    <a class="src" href="https://commons.wikimedia.org/wiki/File%3AEn_l%27an_2000_-_Le_train_%C3%A9lectrique_Paris-P%C3%A9kin_-_Chantier_de_construction_%C3%A9lectrique_-_Auto-patins_%C3%A0_roues_-_Missive_phonographique_-_Le_barbier_nouveau_jeu_-_Madame_%C3%A0_sa_toilette_-_Un_d%C3%AEner_chimique_-..._-_btv1b525123332_%281_of_2%29.jpg" target="_blank" rel="noopener">原始馆藏页与版权 ↗</a>
+  </figcaption>
+</figure></div></section>
+</main></div>
+<footer><div class="wrap">
+<h2>来源与使用说明</h2>
+<p>图像主要来自 <a href="https://commons.wikimedia.org/wiki/Category:Futuristic_postcards" target="_blank">Wikimedia Commons</a> 的 Futuristic postcards、France in XXI Century (fiction)、Germany in XXI Century (fiction)、Moscow in XXIII Century (fiction)、Future in art 等分类，以及法国国家图书馆（BnF）、美国国会图书馆、Wellcome Collection、日本国立国会图书馆的数字化馆藏。原作年代集中在 1804–1928 年，均已进入公有领域；每张图下方的「原始馆藏页与版权」链接可回溯到具体文件页。</p>
+<p>文字考据参考：The Public Domain Review《Lost Futures: A 19th-Century Vision of the Year 2000》、Isaac Asimov《Futuredays》(1986)、上海图书馆「未来之未来」展报道、《点石斋画报》与晚清科学小说研究、村井弦斋 1901 年《二十世纪的预言》、末广重恭《二十三年未来記》(1885)、梁启超《新中国未来记》(1902)、陆士谔《绘图新中国》(1910)。</p>
+<p>俄国 1914 年那套共 8 张，因图库限流本册只收录其中 1 张，其余（中央航空总站、克里姆林宫悬挂铁路、卢比扬卡地铁、莫斯科河世界贸易港、红场交通警、彼得罗夫斯基公园、剧院广场救火）在正文里以卡片背面原文描述呈现。日本与中国部分以文字预言与书影为主：这两地当时的未来想象主要承载在政治小说与报刊里，视觉化程度远低于欧洲商业明信片，这本身就是一条值得注意的差异。</p>
+<p style="margin-top:24px;color:#6e6c64;font-size:12px">图册生成于 2026-11-11 · 点击任意图片放大 · 所有描述为对画面与史料的整理，不构成投资建议或史实断言</p>
+</div></footer>
+<div id="lb"><img id="lbimg" src="" alt=""><div class="cap" id="lbcap"></div><div class="hint">点击空白或按 Esc 关闭</div></div>
+<script>
+const lb=document.getElementById('lb'),li=document.getElementById('lbimg'),lc=document.getElementById('lbcap');
+document.querySelectorAll('.imgbtn').forEach(b=>b.addEventListener('click',()=>{li.src=b.dataset.src;lc.textContent=b.dataset.cap;lb.classList.add('on');document.body.style.overflow='hidden';}));
+lb.addEventListener('click',()=>{lb.classList.remove('on');document.body.style.overflow='';});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){lb.classList.remove('on');document.body.style.overflow='';}});
+document.querySelectorAll('.fbtn').forEach(b=>b.addEventListener('click',()=>{
+ document.querySelectorAll('.fbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ const f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hide',f!=='ALL'&&c.dataset.country!==f));
+}));
+</script></body></html>
