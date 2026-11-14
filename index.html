@@ -325,6 +325,63 @@ html,body{max-width:100%;overflow-x:clip}
  .toolbar{padding:7px 0 8px}
  :root{--stick:100px}
 }
+/* ---- 主题按钮数字引导：弱化卷宗号，撤掉含义不明的上标图数 ---- */
+.fbtn .chipno{font-family:var(--font-mono);font-size:10px;font-weight:400;color:var(--brass);
+ opacity:.9;letter-spacing:.02em}
+.fbtn .chipsep{font-family:var(--font-mono);font-size:10px;color:var(--line);margin:0 5px}
+.fbtn .chiplabel{font-family:var(--font-ui);font-weight:400}
+.fbtn.on .chipno,.fbtn.on .chipsep{color:inherit;opacity:.8}
+.fbtn sup{display:none}
+.legend-note{display:block;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);
+ color:var(--brass);font-size:12.5px;line-height:1.75}
+body.night .legend-note{color:var(--sand)}
+/* ---- 排版层级：字号 / 字重 / 墨色三级区分 ---- */
+:root{--faint:#897a60;--title:#2e2418}
+body.night{--faint:#8d8b81;--title:#f5f4ed}
+.kicker{font-size:11px;letter-spacing:.28em;font-weight:600}
+h1{font-size:clamp(42px,6.4vw,76px);line-height:1.06;letter-spacing:-.04em}
+.sub{font-size:clamp(16px,1.6vw,19px);line-height:1.6;max-width:780px}
+.fact{font-size:11.5px;padding:12px 18px}
+.fact b{font-size:25px;line-height:1}
+.nations{font-size:12px}
+.intro h2{font-size:23px}
+.intro p{font-size:14.5px;line-height:1.85}
+.intro p b{color:var(--ink);font-weight:600}
+.legend-note{font-size:12px;color:var(--faint)}
+.chnum{font-size:36px}
+.chapter h2{font-size:clamp(27px,3.1vw,38px);line-height:1.18;letter-spacing:-.022em}
+.lead{font-size:15px;line-height:1.85;color:var(--muted);max-width:900px}
+.count{font-size:11px;color:var(--faint)}
+.statusbar{font-size:12px}
+#resultText b{font-weight:600;color:var(--title)}
+nav.toc a{font-size:12px}
+nav.toc a b{font-size:12px}
+.filterrow .lbl{font-size:10.5px}
+.fbtn{font-size:12.5px}
+.fbtn .chipno,.fbtn .chipsep{font-size:9.5px}
+figcaption h3{font-size:18px;font-weight:500;line-height:1.35;letter-spacing:-.012em;color:var(--title)}
+figcaption p{font-size:12.8px;line-height:1.8;color:var(--muted)}
+figcaption p.aireason{font-size:12.5px}
+figcaption p.aistyle{font-size:12px;color:var(--faint)}
+.cardmeta .flag,.cardmeta .year,.cardmeta .catno,.cardmeta .aiflag{font-size:10px}
+.src{font-size:10.5px}
+footer h2{font-size:22px}
+footer p{font-size:12.5px;line-height:1.85}
+@media(max-width:640px){
+ h1{font-size:clamp(30px,8vw,40px)}
+ .sub{font-size:14.5px}
+ .fact{font-size:11px;padding:8px 12px}
+ .fact b{font-size:20px}
+ .intro h2{font-size:19px}
+ .intro p{font-size:13.5px}
+ .chapter h2{font-size:clamp(21px,5.6vw,27px)}
+ .lead{font-size:13.5px}
+ figcaption h3{font-size:17px}
+ figcaption p{font-size:13px}
+ .fbtn{font-size:11px}
+ .fbtn .chipno,.fbtn .chipsep{font-size:9px}
+ footer p{font-size:12px}
+}
 </style></head><body class="night"><header class="hero"><div class="wrap">
 <div class="archivestamp"><b>ARCHIVE</b><span>1804 — 1929</span><span>卷 宗 存 档</span></div>
 <div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1929</div>
@@ -342,7 +399,7 @@ html,body{max-width:100%;overflow-x:clip}
 <main>
 <div class="intro">
 <h2>怎么读这本图册</h2>
-<p>整页只按<b>生活领域</b>组织，用上方按钮或左侧目录跳转；<b>不再按国家筛选</b>。国家信息放在每张图的标签里，以及每个领域开头的「涉及哪些国家」一行——这样既能一眼看出某个主题里各国怎么想得不一样，也不会出现选了某个国家后一堆空章节。</p>
+<p>整页只按<b>生活领域</b>组织，用上方按钮或左侧目录跳转；<b>不再按国家筛选</b>。国家信息放在每张图的标签里，以及每个领域开头的「涉及哪些国家」一行——这样既能一眼看出某个主题里各国怎么想得不一样，也不会出现选了某个国家后一堆空章节。<span class="legend-note">页眉按钮上的 01–16 是卷宗号，与下方 16 个章节一一对应；把鼠标停在按钮上（手机长按）可看到该卷宗的完整名称与图数。图数与国家清单改放在每章开头和状态条里，按钮上不再重复标数字。</span></p>
 <p>最核心的一套是法国 <b>En L'An 2000（公元 2000 年）</b>：1899、1900、1901 与 1910 年由 Jean-Marc Côté 等画师分批绘制，原本是为 1900 年巴黎世博会做的香烟盒纸卡，后改成明信片，1986 年由阿西莫夫在《Futuredays》中重新公开。同一波风潮还有德国「21 世纪的德国」卡片、俄国 1914 年 Einem 糖果厂「23 世纪的莫斯科」明信片，以及各国「本城的未来」实寄明信片。</p>
 <p class="aiwarn"><b>关于 AI 补绘：</b>少数国家／主题只有文字记载、找不到可公开发布的历史图像（南亚《苏丹娜的梦》、土耳其《Resimli Ay》、墨西哥 Mujica 百层城、中国《绘图新中国》）。这些位置用<b>当时的画风</b>补绘示意图，逐张加了「AI 风格补绘 · 非历史原图」标签，并写明为何补绘、风格依据和文字史料出处——它们不是史料，也不与历史原图混同。</p>
 </div>
@@ -1558,13 +1615,15 @@ const toolbar=document.getElementById('toolbar');
 const CNAME={FR:'法国',DE:'德国',GB:'英国',US:'美国',RU:'俄国',IT:'意大利',JP:'日本',CN:'中国',AT:'奥地利',PL:'波兰',AU:'澳大利亚',SA:'南亚',TR:'土耳其',MX:'墨西哥',XX:'未署国别'};
 const DNAME={};
 
-let html='<button type="button" class="fbtn on" data-d="ALL">全部领域</button>';
+let html='<button type="button" class="fbtn on" data-d="ALL" title="显示全部 16 个生活领域">全部领域</button>';
 SECTIONS.forEach(sec=>{
  const no=sec.id.replace('ch','');
  const short=sec.querySelector('h2').textContent.trim().split('：')[0];
  DNAME[sec.id]=no+' '+short;
  const n=sec.querySelectorAll('.card').length;
- html+='<button type="button" class="fbtn" data-d="'+sec.id+'"><b>'+no+'</b>'+short+'<sup>'+n+'</sup></button>';
+ const tip='卷宗 '+no+' · '+short+' · '+n+' 幅';
+ html+='<button type="button" class="fbtn" data-d="'+sec.id+'" title="'+tip+'" aria-label="'+tip+'">'+
+       '<span class="chipno">'+no+'</span><span class="chipsep">/</span><span class="chiplabel">'+short+'</span></button>';
 });
 chips.innerHTML=html;
 document.getElementById('mobileToc').innerHTML='<details><summary>章节目录 · '+SECTIONS.length+' 个生活领域</summary><nav>'+
