@@ -284,6 +284,25 @@ html,body{max-width:100%;overflow-x:clip}
  .barbtns{width:100%;justify-content:flex-end}
  .facts{flex-wrap:wrap}
 }
+/* ---- 常驻页眉只保留模块切换；状态信息不随滚动常驻 ---- */
+.toolbar{margin-bottom:0;padding:7px 0 8px;border-top:none;box-shadow:0 2px 8px var(--shadow)}
+.toolbar .filterrow{gap:8px}
+.toolbar .filterrow .lbl{font-size:10px;letter-spacing:.08em;flex:0 0 auto}
+.chips{padding:2px 0 3px}
+.statusbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+ margin:0 0 30px;padding:10px 0 12px;border-bottom:1px dashed var(--line);
+ font-size:12px;color:var(--muted)}
+.statusbar #resultText{min-width:0;flex:1 1 auto;overflow-wrap:anywhere;line-height:1.6}
+.statusbar .barbtns{flex:0 0 auto}
+:root{--stick:58px}
+@media(max-width:640px){
+ :root{--stick:62px}
+ .toolbar{padding:6px 0 7px}
+ .toolbar .filterrow .lbl{display:none}
+ .statusbar{font-size:10.5px;margin-bottom:22px;padding:8px 0 10px}
+ .statusbar #resultText{flex:1 1 100%}
+ .statusbar .barbtns{width:100%;justify-content:flex-end}
+}
 </style></head><body class="night"><header class="hero"><div class="wrap">
 <div class="archivestamp"><b>ARCHIVE</b><span>1804 — 1929</span><span>卷 宗 存 档</span></div>
 <div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1929</div>
@@ -306,8 +325,11 @@ html,body{max-width:100%;overflow-x:clip}
 <p class="aiwarn"><b>关于 AI 补绘：</b>少数国家／主题只有文字记载、找不到可公开发布的历史图像（南亚《苏丹娜的梦》、土耳其《Resimli Ay》、墨西哥 Mujica 百层城、中国《绘图新中国》）。这些位置用<b>当时的画风</b>补绘示意图，逐张加了「AI 风格补绘 · 非历史原图」标签，并写明为何补绘、风格依据和文字史料出处——它们不是史料，也不与历史原图混同。</p>
 </div>
 <div class="toolbar" id="toolbar">
- <div class="filterrow"><span class="lbl">按生活领域浏览</span><div class="chips" id="domainChips"></div></div>
- <div class="resultbar"><span id="resultText"></span><div class="barbtns"><button type="button" class="nightbtn" id="nightBtn">☀ 纸色</button><button type="button" class="resetbtn" id="resetBtn">显示全部领域</button></div></div>
+ <div class="filterrow"><span class="lbl">主题</span><div class="chips" id="domainChips"></div></div>
+</div>
+<div class="statusbar" id="statusbar">
+ <span id="resultText"></span>
+ <div class="barbtns"><button type="button" class="nightbtn" id="nightBtn">☀ 纸色</button><button type="button" class="resetbtn" id="resetBtn">显示全部领域</button></div>
 </div>
 <div class="mobiletoc" id="mobileToc"></div>
 <div class="empty" id="empty">这个领域暂时没有图像。</div>
@@ -1545,12 +1567,10 @@ function apply(mode){
   sec.classList.toggle('hide',!show);
  });
  const visible=CARDS.filter(c=>!c.closest('.chapter').classList.contains('hide'));
- const ccs=[];
- visible.forEach(c=>{const n=CNAME[c.dataset.country]||c.dataset.country;if(ccs.indexOf(n)<0)ccs.push(n);});
  const ai=visible.filter(c=>c.dataset.kind==='ai').length;
  const dname=state.d==='ALL'?'全部领域':(DNAME[state.d]||state.d);
  resultText.innerHTML='当前：<b>'+dname+'</b> · 共 '+visible.length+' 幅'+
-  (ai?'（含 '+ai+' 幅 AI 补绘）':'')+' · 涉及 '+(ccs.length)+' 个国家／地区：'+ccs.join('、');
+  (ai?'（含 '+ai+' 幅 AI 补绘）':'');
  emptyBox.classList.toggle('show',visible.length===0);
  chips.querySelectorAll('.fbtn').forEach(b=>b.classList.toggle('on',b.dataset.d===state.d));
  document.querySelectorAll('[data-nav]').forEach(a=>{
