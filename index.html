@@ -303,6 +303,28 @@ html,body{max-width:100%;overflow-x:clip}
  .statusbar #resultText{flex:1 1 100%}
  .statusbar .barbtns{width:100%;justify-content:flex-end}
 }
+/* ---- 常驻页眉多行展示主题（不再只有一行） ---- */
+@media(min-width:981px){
+ .chips{flex-wrap:wrap;overflow-x:visible;overflow-y:visible;max-height:none;padding:2px 0 5px;scroll-snap-type:none}
+ .chips .fbtn{scroll-snap-align:none}
+ .toolbar{padding:9px 0 10px}
+ :root{--stick:100px}
+}
+@media(min-width:641px) and (max-width:980px){
+ .chips{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,minmax(0,auto));
+  grid-auto-columns:max-content;gap:6px;overflow-x:auto;overflow-y:hidden;
+  overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding:2px 0 5px}
+ .chips .fbtn{width:max-content;scroll-snap-align:center}
+ :root{--stick:92px}
+}
+@media(max-width:640px){
+ .chips{display:grid;grid-auto-flow:column;grid-template-rows:repeat(3,minmax(0,auto));
+  grid-auto-columns:max-content;gap:5px;overflow-x:auto;overflow-y:hidden;
+  overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding:2px 0 5px}
+ .chips .fbtn{width:max-content;font-size:10.5px;padding:3px 8px;scroll-snap-align:center}
+ .toolbar{padding:7px 0 8px}
+ :root{--stick:100px}
+}
 </style></head><body class="night"><header class="hero"><div class="wrap">
 <div class="archivestamp"><b>ARCHIVE</b><span>1804 — 1929</span><span>卷 宗 存 档</span></div>
 <div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1929</div>
