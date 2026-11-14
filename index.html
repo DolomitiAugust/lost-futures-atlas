@@ -382,6 +382,50 @@ footer p{font-size:12.5px;line-height:1.85}
  .fbtn .chipno,.fbtn .chipsep{font-size:9px}
  footer p{font-size:12px}
 }
+/* ---- 卷宗抽屉式目录 ---- */
+nav.toc{padding-top:24px}
+nav.toc .lbl{font-size:10px;letter-spacing:.22em}
+.tocnow{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--stamp);
+ border-radius:2px;padding:11px 12px;margin:0 0 16px;box-shadow:0 2px 7px var(--shadow)}
+.tocnow-lbl{display:block;font-family:var(--font-ui);font-size:9px;font-weight:600;
+ letter-spacing:.2em;color:var(--brass);text-transform:uppercase}
+.tocnow b{display:block;font-family:var(--font-display);font-size:17px;font-weight:400;
+ color:var(--title);margin:5px 0 3px;line-height:1.3;letter-spacing:-.01em}
+#tocNowTip{display:block;font-family:var(--font-ui);font-style:normal;font-size:11px;
+ line-height:1.65;color:var(--muted);margin:0 0 7px}
+#tocNowMeta{display:block;font-family:var(--font-mono);font-size:10px;color:var(--faint);line-height:1.5}
+.tocgroup{display:flex;align-items:center;gap:8px;margin:15px 4px 7px;
+ font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--brass)}
+.tocgroup::after{content:"";flex:1;height:1px;background:var(--line)}
+.tocgroup b{font-weight:400;color:var(--stamp);white-space:nowrap}
+.tocgroup i{font-style:normal;white-space:nowrap}
+nav.toc a,.mobiletoc a{display:flex;align-items:center;gap:9px;padding:6px 8px;margin:2px 0;
+ border:1px solid transparent;border-left:2px solid transparent;border-radius:2px;
+ background:transparent;text-decoration:none;
+ transition:transform .18s,background .18s,border-color .18s,box-shadow .18s}
+.tocno{flex:0 0 25px;height:21px;display:flex;align-items:center;justify-content:center;
+ font-family:var(--font-mono);font-size:9.5px;line-height:1;color:var(--brass);
+ border:1px solid var(--line);border-radius:2px;background:rgba(243,234,212,.35)}
+.toctext{min-width:0;flex:1}
+.toctext b{display:block;font-family:var(--font-ui);font-size:12.5px;font-weight:500;
+ color:var(--ink);line-height:1.35}
+.toctext i{display:block;font-style:normal;font-size:10px;line-height:1.5;color:var(--muted);
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav.toc a:hover{transform:translateX(3px);background:rgba(243,234,212,.55);border-color:var(--line)}
+nav.toc a.active{transform:translateX(4px);background:var(--panel);border-color:var(--line);
+ border-left-color:var(--stamp);box-shadow:2px 2px 7px var(--shadow)}
+nav.toc a.active .tocno{background:var(--stamp);border-color:var(--stamp);color:#f6ecd6}
+nav.toc a.active .toctext b{color:var(--title)}
+nav.toc a.dim{opacity:.3}
+.mobiletoc nav{display:block}
+.mobiletoc .tocgroup{margin:12px 2px 6px}
+.mobiletoc .toctext i{display:block;font-size:10px;line-height:1.5}
+.mobiletoc a:hover{background:rgba(243,234,212,.55)}
+.mobiletoc a.active{background:var(--panel);border-left-color:var(--stamp)}
+.mobiletoc a.dim{opacity:.35}
+body.night .tocno{background:rgba(255,255,255,.04)}
+body.night nav.toc a:hover,body.night .mobiletoc a:hover{background:rgba(255,255,255,.05)}
+body.night nav.toc a.active,body.night .mobiletoc a.active{background:var(--panel)}
 </style></head><body class="night"><header class="hero"><div class="wrap">
 <div class="archivestamp"><b>ARCHIVE</b><span>1804 — 1929</span><span>卷 宗 存 档</span></div>
 <div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1929</div>
@@ -395,7 +439,16 @@ footer p{font-size:12.5px;line-height:1.85}
 <div class="nations"><b>收录来源：</b>法国 · 德国 · 英国 · 意大利 · 俄国 · 美国 · 奥地利 · 波兰 · 澳大利亚 · 日本 · 中国 · 南亚 · 土耳其 · 墨西哥（另有少量未署国别馆藏）</div>
 </div></header>
 <div class="wrap layout">
-<nav class="toc"><div class="lbl">目录 / CONTENTS</div><a href="#ch01" data-nav="ch01"><b>01</b>出门：给每个职业发一对翅膀</a><a href="#ch02" data-nav="ch02"><b>02</b>城市与建筑：往上叠，而不是推倒重来</a><a href="#ch03" data-nav="ch03"><b>03</b>地面交通：懒得走路，也懒得换乘</a><a href="#ch04" data-nav="ch04"><b>04</b>海洋：被当成第二个陆地</a><a href="#ch05" data-nav="ch05"><b>05</b>家务、穿衣与照护：机器接管身体周边</a><a href="#ch06" data-nav="ch06"><b>06</b>吃饭、种地与取暖：实验室接管厨房和天空</a><a href="#ch07" data-nav="ch07"><b>07</b>课堂与办公：知识像水一样灌进去</a><a href="#ch08" data-nav="ch08"><b>08</b>通信与媒体：可视电话、影像信件、听报纸</a><a href="#ch09" data-nav="ch09"><b>09</b>看病与身体：远程医疗比互联网早一百年</a><a href="#ch10" data-nav="ch10"><b>10</b>娱乐、体育与休闲：技术只换场地，不换玩法</a><a href="#ch11" data-nav="ch11"><b>11</b>战争、秩序与风险：进步也会出事</a><a href="#ch12" data-nav="ch12"><b>12</b>地方想象：我们这儿的未来长什么样</a><a href="#ch13" data-nav="ch13"><b>13</b>亚洲、奥斯曼与拉美：未来不止一种写法</a><a href="#ch14" data-nav="ch14"><b>14</b>更早的十九世纪：1804—1864</a><a href="#ch15" data-nav="ch15"><b>15</b>星空：一个几乎缺席的角落</a><a href="#ch16" data-nav="ch16"><b>16</b>他们没想到的：衣服、螺旋桨与信息</a></nav>
+<nav class="toc">
+ <div class="lbl">卷宗目录 / CONTENTS</div>
+ <div class="tocnow" id="tocNow">
+  <span class="tocnow-lbl">当前卷宗</span>
+  <b id="tocNowTitle">全部 16 卷</b>
+  <i id="tocNowTip">从 16 卷里挑一卷开始</i>
+  <span id="tocNowMeta">125 幅 · 15 个国家／地区</span>
+ </div>
+ <div class="tocgroup"><b>卷 Ⅰ</b><i>行与居</i></div><a href="#ch01" data-nav="ch01" title="邮差、警察、消防员，人人都长出了翅膀"><span class="tocno">01</span><span class="toctext"><b>出门</b><i>邮差、警察、消防员，人人都长出了翅膀</i></span></a><a href="#ch02" data-nav="ch02" title="老城一寸不拆，只往头顶继续加盖"><span class="tocno">02</span><span class="toctext"><b>城市与建筑</b><i>老城一寸不拆，只往头顶继续加盖</i></span></a><a href="#ch03" data-nav="ch03" title="会自己走的路，和能开进水里的火车"><span class="tocno">03</span><span class="toctext"><b>地面交通</b><i>会自己走的路，和能开进水里的火车</i></span></a><a href="#ch04" data-nav="ch04" title="鲸鱼拉公交，海底打槌球"><span class="tocno">04</span><span class="toctext"><b>海洋</b><i>鲸鱼拉公交，海底打槌球</i></span></a><div class="tocgroup"><b>卷 Ⅱ</b><i>身与日</i></div><a href="#ch05" data-nav="ch05" title="一排机械臂替你梳头，动力却靠脚踩"><span class="tocno">05</span><span class="toctext"><b>家务、穿衣与照护</b><i>一排机械臂替你梳头，动力却靠脚踩</i></span></a><a href="#ch06" data-nav="ch06" title="镭做的壁炉，机器里孵出的小鸡"><span class="tocno">06</span><span class="toctext"><b>吃饭、种地与取暖</b><i>镭做的壁炉，机器里孵出的小鸡</i></span></a><a href="#ch07" data-nav="ch07" title="把书倒进漏斗，知识直接灌进脑袋"><span class="tocno">07</span><span class="toctext"><b>课堂与办公</b><i>把书倒进漏斗，知识直接灌进脑袋</i></span></a><a href="#ch08" data-nav="ch08" title="1878 年就有人画出了视频通话"><span class="tocno">08</span><span class="toctext"><b>通信与媒体</b><i>1878 年就有人画出了视频通话</i></span></a><a href="#ch09" data-nav="ch09" title="电话里看病，手术放给一屋子人看"><span class="tocno">09</span><span class="toctext"><b>看病与身体</b><i>电话里看病，手术放给一屋子人看</i></span></a><div class="tocgroup"><b>卷 Ⅲ</b><i>群与世</i></div><a href="#ch10" data-nav="ch10" title="机器人乐团、空中网球、飞艇上看棒球"><span class="tocno">10</span><span class="toctext"><b>娱乐、体育与休闲</b><i>机器人乐团、空中网球、飞艇上看棒球</i></span></a><a href="#ch11" data-nav="ch11" title="装甲车、空战，还有一场未来的空难"><span class="tocno">11</span><span class="toctext"><b>战争、秩序与风险</b><i>装甲车、空战，还有一场未来的空难</i></span></a><a href="#ch12" data-nav="ch12" title="萨尔茨堡、纽伦堡，小镇土路上空塞满飞艇"><span class="tocno">12</span><span class="toctext"><b>地方想象</b><i>萨尔茨堡、纽伦堡，小镇土路上空塞满飞艇</i></span></a><a href="#ch13" data-nav="ch13" title="别人画飞行邮差，他们在写国家会变成什么样"><span class="tocno">13</span><span class="toctext"><b>亚洲、奥斯曼与拉美</b><i>别人画飞行邮差，他们在写国家会变成什么样</i></span></a><div class="tocgroup"><b>卷 Ⅳ</b><i>时与外</i></div><a href="#ch14" data-nav="ch14" title="1804 年的气球飞船，1828 年的机械讽刺画"><span class="tocno">14</span><span class="toctext"><b>更早的十九世纪</b><i>1804 年的气球飞船，1828 年的机械讽刺画</i></span></a><a href="#ch15" data-nav="ch15" title="87 张预言里，几乎没有一张画了太空"><span class="tocno">15</span><span class="toctext"><b>星空</b><i>87 张预言里，几乎没有一张画了太空</i></span></a><a href="#ch16" data-nav="ch16" title="机器全变了，衣服、礼仪和阶层一点没变"><span class="tocno">16</span><span class="toctext"><b>他们没想到的</b><i>机器全变了，衣服、礼仪和阶层一点没变</i></span></a>
+</nav>
 <main>
 <div class="intro">
 <h2>怎么读这本图册</h2>
@@ -1626,8 +1679,24 @@ SECTIONS.forEach(sec=>{
        '<span class="chipno">'+no+'</span><span class="chipsep">/</span><span class="chiplabel">'+short+'</span></button>';
 });
 chips.innerHTML=html;
-document.getElementById('mobileToc').innerHTML='<details><summary>章节目录 · '+SECTIONS.length+' 个生活领域</summary><nav>'+
- SECTIONS.map(sec=>'<a href="#'+sec.id+'" data-nav="'+sec.id+'"><b>'+sec.id.replace('ch','')+'</b>'+sec.querySelector('h2').textContent.trim()+'</a>').join('')+'</nav></details>';
+const TIPS={};
+document.querySelectorAll('nav.toc a[data-nav]').forEach(a=>{
+ const tip=a.querySelector('.toctext i');
+ TIPS[a.dataset.nav.replace('ch','')]=tip?tip.textContent:'';
+});
+const TOC_GROUPS=[[1,'Ⅰ','行与居'],[5,'Ⅱ','身与日'],[10,'Ⅲ','群与世'],[14,'Ⅳ','时与外']];
+let mt='<details><summary>卷宗目录 · '+SECTIONS.length+' 卷</summary><nav>';
+SECTIONS.forEach((sec,idx)=>{
+ const n=idx+1;
+ const g=TOC_GROUPS.find(x=>x[0]===n);
+ if(g)mt+='<div class="tocgroup"><b>卷 '+g[1]+'</b><i>'+g[2]+'</i></div>';
+ const label=sec.querySelector('h2').textContent.trim().split('：')[0];
+ const no=sec.id.replace('ch','');
+ mt+='<a href="#'+sec.id+'" data-nav="'+sec.id+'"><span class="tocno">'+no+
+      '</span><span class="toctext"><b>'+label+'</b><i>'+(TIPS[no]||'')+'</i></span></a>';
+});
+mt+='</nav></details>';
+document.getElementById('mobileToc').innerHTML=mt;
 
 const state={d:'ALL'};
 function centerChip(btn){
@@ -1648,10 +1717,17 @@ function apply(mode){
   sec.classList.toggle('hide',!show);
  });
  const visible=CARDS.filter(c=>!c.closest('.chapter').classList.contains('hide'));
+ const ccs=[];
+ visible.forEach(c=>{const n=CNAME[c.dataset.country]||c.dataset.country;if(ccs.indexOf(n)<0)ccs.push(n);});
  const ai=visible.filter(c=>c.dataset.kind==='ai').length;
  const dname=state.d==='ALL'?'全部领域':(DNAME[state.d]||state.d);
  resultText.innerHTML='当前：<b>'+dname+'</b> · 共 '+visible.length+' 幅'+
   (ai?'（含 '+ai+' 幅 AI 补绘）':'');
+ const nowTitle=document.getElementById('tocNowTitle'),nowMeta=document.getElementById('tocNowMeta');
+ const nowTip=document.getElementById('tocNowTip');
+ if(nowTitle)nowTitle.textContent=state.d==='ALL'?('全部 '+SECTIONS.length+' 卷'):dname;
+ if(nowTip)nowTip.textContent=state.d==='ALL'?('从 '+SECTIONS.length+' 卷里挑一卷开始'):(TIPS[state.d.replace('ch','')]||'');
+ if(nowMeta)nowMeta.textContent=visible.length+' 幅 · '+ccs.length+' 个国家／地区';
  emptyBox.classList.toggle('show',visible.length===0);
  chips.querySelectorAll('.fbtn').forEach(b=>b.classList.toggle('on',b.dataset.d===state.d));
  document.querySelectorAll('[data-nav]').forEach(a=>{
