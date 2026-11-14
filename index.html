@@ -233,6 +233,9 @@ body.night .lead,body.night figcaption p,body.night .intro p,body.night .sub,bod
 body.night .flag{background:rgba(217,119,87,.14);color:var(--coral);border-color:rgba(217,119,87,.3)}
 body.night .aiflag{background:#3a241d;color:#e8b49c;border-color:#6d4032}
 body.night .catno{color:var(--sand);border-color:var(--line)}
+body.night figcaption{background:none}
+body.night .intro .aiwarn,body.night figcaption p.aireason,body.night figcaption p b{color:#e8b49c}
+body.night .fact{box-shadow:0 2px 5px var(--shadow)}
 body.night .archivestamp{opacity:.3;border-color:var(--coral);color:var(--coral)}
 body.night .count{color:var(--sand)}
 body.night .filterrow .lbl,body.night nav.toc .lbl{color:var(--sand)}
@@ -281,7 +284,7 @@ html,body{max-width:100%;overflow-x:clip}
  .barbtns{width:100%;justify-content:flex-end}
  .facts{flex-wrap:wrap}
 }
-</style></head><body><header class="hero"><div class="wrap">
+</style></head><body class="night"><header class="hero"><div class="wrap">
 <div class="archivestamp"><b>ARCHIVE</b><span>1804 — 1929</span><span>卷 宗 存 档</span></div>
 <div class="kicker">A Visual Atlas of Lost Futures · 1804 — 1929</div>
 <h1>百年前，人们<em>画</em>出的未来</h1>
@@ -304,7 +307,7 @@ html,body{max-width:100%;overflow-x:clip}
 </div>
 <div class="toolbar" id="toolbar">
  <div class="filterrow"><span class="lbl">按生活领域浏览</span><div class="chips" id="domainChips"></div></div>
- <div class="resultbar"><span id="resultText"></span><div class="barbtns"><button type="button" class="nightbtn" id="nightBtn">◐ 夜灯</button><button type="button" class="resetbtn" id="resetBtn">显示全部领域</button></div></div>
+ <div class="resultbar"><span id="resultText"></span><div class="barbtns"><button type="button" class="nightbtn" id="nightBtn">☀ 纸色</button><button type="button" class="resetbtn" id="resetBtn">显示全部领域</button></div></div>
 </div>
 <div class="mobiletoc" id="mobileToc"></div>
 <div class="empty" id="empty">这个领域暂时没有图像。</div>
@@ -1580,7 +1583,11 @@ document.addEventListener('click',e=>{
  window.scrollTo({top:Math.max(0,topOf(sec)),behavior:'smooth'});
 });
 const nb=document.getElementById('nightBtn');
-try{if(localStorage.getItem('atlas-night')==='1'){document.body.classList.add('night');nb.textContent='☀ 纸色';}}catch(e){}
+try{
+ if(localStorage.getItem('atlas-night')==='0'){
+  document.body.classList.remove('night');nb.textContent='◐ 夜灯';
+ }
+}catch(e){}
 nb.addEventListener('click',()=>{
  const on=document.body.classList.toggle('night');
  nb.textContent=on?'☀ 纸色':'◐ 夜灯';
